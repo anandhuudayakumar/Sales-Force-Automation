@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ui:composition xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:af="http://xmlns.oracle.com/adf/faces/rich"
+                xmlns:f="http://java.sun.com/jsf/core">
+  <af:panelBox text="Edit Contact Invitees" id="pb1">
+    <f:facet name="toolbar"/>
+    <af:panelFormLayout id="pfl1">
+      <af:selectOneChoice value="#{bindings.AppointmentId.inputValue}" label="#{bindings.AppointmentId.label}"
+                          required="#{bindings.AppointmentId.hints.mandatory}"
+                          shortDesc="#{bindings.AppointmentId.hints.tooltip}" id="soc1">
+        <f:selectItems value="#{bindings.AppointmentId.items}" id="si1"/>
+        <f:validator binding="#{bindings.AppointmentId.validator}"/>
+      </af:selectOneChoice>
+      <af:selectOneChoice value="#{bindings.ContactId.inputValue}" label="#{bindings.ContactId.label}"
+                          required="#{bindings.ContactId.hints.mandatory}"
+                          shortDesc="#{bindings.ContactId.hints.tooltip}" id="soc2">
+        <f:selectItems value="#{bindings.ContactId.items}" id="si2"/>
+        <f:validator binding="#{bindings.ContactId.validator}"/>
+      </af:selectOneChoice>
+      <f:facet name="footer">
+        <af:panelGroupLayout id="pgl1">
+          <af:button text="Submit" id="b1"/>
+          <af:button text="back" id="b2" action="backToHomeFromEdit"/>
+          <f:facet name="separator">
+            <af:spacer width="20" height="10" id="s1"/>
+          </f:facet>
+        </af:panelGroupLayout>
+      </f:facet>
+    </af:panelFormLayout>
+  </af:panelBox>
+</ui:composition>

@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ui:composition xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:af="http://xmlns.oracle.com/adf/faces/rich"
+                xmlns:f="http://java.sun.com/jsf/core">
+  <af:panelGroupLayout layout="vertical" id="pgl1">
+    <af:panelHeader text="Appointment" id="ph1">
+      <af:button text="Create" id="b1" actionListener="#{bindings.CreateInsert.execute}"
+                 disabled="#{!bindings.CreateInsert.enabled}" action="createappointment"/>
+      <af:button text="back" id="b2" action="backappointment"/>
+      <af:query id="qryId1" headerText="Search" disclosed="true"
+                value="#{bindings.AppointmentSearchQuery.queryDescriptor}"
+                model="#{bindings.AppointmentSearchQuery.queryModel}"
+                queryListener="#{bindings.AppointmentSearchQuery.processQuery}"
+                queryOperationListener="#{bindings.AppointmentSearchQuery.processQueryOperation}"
+                resultComponentId="::resId1"/>
+    </af:panelHeader>
+    <af:table value="#{bindings.AppointmentVO3.collectionModel}" var="row" rows="#{bindings.AppointmentVO3.rangeSize}"
+              emptyText="#{bindings.AppointmentVO3.viewable ? 'No data to display.' : 'Access Denied.'}"
+              rowBandingInterval="0" selectedRowKeys="#{bindings.AppointmentVO3.collectionModel.selectedRow}"
+              selectionListener="#{bindings.AppointmentVO3.collectionModel.makeCurrent}" rowSelection="single"
+              fetchSize="#{bindings.AppointmentVO3.rangeSize}"
+              filterModel="#{bindings.AppointmentSearchQuery.queryDescriptor}" filterVisible="true"
+              queryListener="#{bindings.AppointmentSearchQuery.processQuery}" varStatus="vs" id="resId1"
+              partialTriggers="::b1">
+      <af:column sortProperty="#{bindings.AppointmentVO3.hints.AppName.name}" filterable="true" sortable="true"
+                 headerText="#{bindings.AppointmentVO3.hints.AppName.label}" id="resId1c1">
+        <af:link shortDesc="#{bindings.AppointmentVO3.hints.AppName.tooltip}" id="ot1" text="#{row.AppName}"
+                 action="editappointment"/>
+      </af:column>
+      <af:column sortProperty="#{bindings.AppointmentVO3.hints.AppDescription.name}" filterable="true" sortable="true"
+                 headerText="#{bindings.AppointmentVO3.hints.AppDescription.label}" id="resId1c2">
+        <af:outputText value="#{row.AppDescription}" shortDesc="#{bindings.AppointmentVO3.hints.AppDescription.tooltip}"
+                       id="ot2"/>
+      </af:column>
+      <af:column sortProperty="#{bindings.AppointmentVO3.hints.StartDate.name}" filterable="true" sortable="true"
+                 headerText="#{bindings.AppointmentVO3.hints.StartDate.label}" id="resId1c3">
+        <f:facet name="filter">
+          <af:inputDate value="#{bindings.AppointmentSearchQuery.queryDescriptor.filterConjunctionCriterion.criterionMap.StartDate.value}"
+                        id="id1">
+            <af:convertDateTime pattern="#{bindings.AppointmentVO3.hints.StartDate.format}"/>
+          </af:inputDate>
+        </f:facet>
+        <af:outputText value="#{row.StartDate}" shortDesc="#{bindings.AppointmentVO3.hints.StartDate.tooltip}" id="ot3">
+          <af:convertDateTime pattern="#{bindings.AppointmentVO3.hints.StartDate.format}"/>
+        </af:outputText>
+      </af:column>
+      <af:column sortProperty="#{bindings.AppointmentVO3.hints.EndDate.name}" filterable="true" sortable="true"
+                 headerText="#{bindings.AppointmentVO3.hints.EndDate.label}" id="resId1c4">
+        <f:facet name="filter">
+          <af:inputDate value="#{bindings.AppointmentSearchQuery.queryDescriptor.filterConjunctionCriterion.criterionMap.EndDate.value}"
+                        id="id2">
+            <af:convertDateTime pattern="#{bindings.AppointmentVO3.hints.EndDate.format}"/>
+          </af:inputDate>
+        </f:facet>
+        <af:outputText value="#{row.EndDate}" shortDesc="#{bindings.AppointmentVO3.hints.EndDate.tooltip}" id="ot4">
+          <af:convertDateTime pattern="#{bindings.AppointmentVO3.hints.EndDate.format}"/>
+        </af:outputText>
+      </af:column>
+      <af:column sortProperty="#{bindings.AppointmentVO3.hints.Location.name}" filterable="true" sortable="true"
+                 headerText="#{bindings.AppointmentVO3.hints.Location.label}" id="resId1c5">
+        <af:outputText value="#{row.Location}" shortDesc="#{bindings.AppointmentVO3.hints.Location.tooltip}" id="ot5"/>
+      </af:column>
+      <af:column sortProperty="#{bindings.AppointmentVO3.hints.AccountId.name}" filterable="true" sortable="true"
+                 headerText="#{bindings.AppointmentVO3.hints.AccountId.label}" id="resId1c6">
+        <af:outputText value="#{row.AccountId}" shortDesc="#{bindings.AppointmentVO3.hints.AccountId.tooltip}" id="ot6">
+          <af:convertNumber groupingUsed="false" pattern="#{bindings.AppointmentVO3.hints.AccountId.format}"/>
+        </af:outputText>
+      </af:column>
+      <af:column sortProperty="#{bindings.AppointmentVO3.hints.OppurtunityId.name}" filterable="true" sortable="true"
+                 headerText="#{bindings.AppointmentVO3.hints.OppurtunityId.label}" id="resId1c7">
+        <af:outputText value="#{row.OppurtunityId}" shortDesc="#{bindings.AppointmentVO3.hints.OppurtunityId.tooltip}"
+                       id="ot7">
+          <af:convertNumber groupingUsed="false" pattern="#{bindings.AppointmentVO3.hints.OppurtunityId.format}"/>
+        </af:outputText>
+      </af:column>
+      <af:column sortProperty="#{bindings.AppointmentVO3.hints.ContactId.name}" filterable="true" sortable="true"
+                 headerText="#{bindings.AppointmentVO3.hints.ContactId.label}" id="resId1c8">
+        <af:outputText value="#{row.ContactId}" shortDesc="#{bindings.AppointmentVO3.hints.ContactId.tooltip}" id="ot8">
+          <af:convertNumber groupingUsed="false" pattern="#{bindings.AppointmentVO3.hints.ContactId.format}"/>
+        </af:outputText>
+      </af:column>
+    </af:table>
+  </af:panelGroupLayout>
+</ui:composition>

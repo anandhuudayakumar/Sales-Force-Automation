@@ -1,0 +1,8 @@
+The following Synchronization Actions were performed successfully:
+
+Entity :OpportunitiesEO
+  Attribute :Accountid
+    Change Column type to NUMBER
+    Change Precision to 0
+  Attribute :OppId
+    Change Mandatory to:true

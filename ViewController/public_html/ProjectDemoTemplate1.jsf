@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<af:pageTemplateDef xmlns:af="http://xmlns.oracle.com/adf/faces/rich" var="attrs" definition="private"
+                    xmlns:afc="http://xmlns.oracle.com/adf/faces/rich/component" xmlns:f="http://java.sun.com/jsf/core">
+    <af:xmlContent>
+        <afc:component>
+            <afc:description/>
+            <afc:display-name>ProjectDemoTemplate1</afc:display-name>
+        </afc:component>
+    </af:xmlContent>
+    <af:panelSplitter orientation="horizontal" splitterPosition="100" id="pt_ps1">
+        <f:facet name="first">
+            <!-- Left -->
+            <af:panelGridLayout id="pt_pgl3">
+                <af:gridRow marginTop="5px" height="20%" id="pt_gr4">
+                    <af:gridCell marginStart="5px" width="100%" marginEnd="5px" id="pt_gc5"/>
+                </af:gridRow>
+                <af:gridRow marginTop="5px" height="80%" marginBottom="5px" id="pt_gr5">
+                    <af:gridCell marginStart="5px" width="100%" marginEnd="5px" id="pt_gc6">
+                    
+                    </af:gridCell>
+                    
+                </af:gridRow>
+            </af:panelGridLayout>
+        </f:facet>
+        <f:facet name="second">
+            <af:panelGridLayout id="pt_pgl1">
+                <af:gridRow height="50px" id="pt_gr1">
+                    <af:gridCell width="100%" halign="stretch" valign="stretch" id="pt_gc2">
+                        <!-- Partial Header -->
+                        <af:panelGridLayout id="pt_pgl2">
+                            <af:gridRow marginTop="5px" height="auto" marginBottom="5px" id="pt_gr3">
+                                <af:gridCell marginStart="5px" width="50%" id="pt_gc3">
+                                            <af:outputText value="ORACLE SFA" id="ot1" inlineStyle="font-size:medium;"/>
+                                </af:gridCell>
+                                <af:gridCell marginStart="5px" width="50%" marginEnd="5px" id="pt_gc4">
+                                        <af:navigationPane id="np1" inlineStyle="-align:text-bottom; font-size:xx-small;">
+                                            <af:commandNavigationItem id="ni1" text="Home" action="gotohome"/>
+                                            <af:commandNavigationItem id="ni5" text="User Account"
+                                                                      action="userAccount"/>
+                                            <af:commandNavigationItem id="ni3" text="Roles" action="roles"/>
+                                            <af:commandNavigationItem id="ni4" text="Product" action="product"/>
+                                            <af:commandNavigationItem id="ni6" text="Logout" action="logout"/>
+                                            
+                                     </af:navigationPane>
+                                </af:gridCell>
+                            </af:gridRow>
+                        </af:panelGridLayout>
+                    </af:gridCell>
+                </af:gridRow>
+                <af:gridRow height="100%" id="pt_gr2">
+                    <af:gridCell width="100%" halign="stretch" valign="stretch" id="pt_gc1">
+                        <!-- Content -->
+                    </af:gridCell>
+                </af:gridRow>
+            </af:panelGridLayout>
+        </f:facet>
+    </af:panelSplitter>
+</af:pageTemplateDef>

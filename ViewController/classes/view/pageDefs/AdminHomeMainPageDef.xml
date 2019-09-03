@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.2.1.9.14" id="AdminHomeMainPageDef"
+                Package="view.pageDefs">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+    <iterator Binds="UserAccountsVO1" RangeSize="25" DataControl="AppModuleDataControl" id="UserAccountsVO1Iterator"/>
+    <searchRegion Binds="UserAccountsVO1Iterator" Criteria=""
+                  Customizer="oracle.jbo.uicli.binding.JUSearchBindingCustomizer" id="UserAccountsVO1Query"/>
+    <iterator Binds="RolesVO1" RangeSize="25" DataControl="AppModuleDataControl" id="RolesVO1Iterator"/>
+    <searchRegion Binds="RolesVO1Iterator" Criteria="" Customizer="oracle.jbo.uicli.binding.JUSearchBindingCustomizer"
+                  id="RolesVO1Query"/>
+    <iterator Binds="ProductCatalogVO1" RangeSize="25" DataControl="AppModuleDataControl"
+              id="ProductCatalogVO1Iterator"/>
+    <searchRegion Binds="ProductCatalogVO1Iterator" Criteria=""
+                  Customizer="oracle.jbo.uicli.binding.JUSearchBindingCustomizer" id="ProductCatalogVO1Query"/>
+  </executables>
+  <bindings>
+    <tree IterBinding="UserAccountsVO1Iterator" id="UserAccountsVO1">
+      <nodeDefinition DefName="model.view.UserAccountsVO" Name="UserAccountsVO10">
+        <AttrNames>
+          <Item Value="UserName"/>
+          <Item Value="FirstName"/>
+          <Item Value="MiddleName"/>
+          <Item Value="LastName"/>
+          <Item Value="StartDate"/>
+          <Item Value="EndDate"/>
+        </AttrNames>
+      </nodeDefinition>
+    </tree>
+    <tree IterBinding="RolesVO1Iterator" id="RolesVO1">
+      <nodeDefinition DefName="model.view.RolesVO" Name="RolesVO10">
+        <AttrNames>
+          <Item Value="RoleName"/>
+          <Item Value="RoleDescription"/>
+          <Item Value="RoleStartDate"/>
+          <Item Value="RoleEndDate"/>
+          <Item Value="CreatedDate"/>
+        </AttrNames>
+      </nodeDefinition>
+    </tree>
+    <tree IterBinding="ProductCatalogVO1Iterator" id="ProductCatalogVO1">
+      <nodeDefinition DefName="model.view.ProductCatalogVO" Name="ProductCatalogVO10">
+        <AttrNames>
+          <Item Value="Productname"/>
+          <Item Value="CurrentPrice"/>
+          <Item Value="MinPrice"/>
+        </AttrNames>
+      </nodeDefinition>
+    </tree>
+  </bindings>
+</pageDefinition>

@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ui:composition xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:af="http://xmlns.oracle.com/adf/faces/rich"
+                xmlns:f="http://java.sun.com/jsf/core">
+  <af:panelSplitter id="ps1" orientation="vertical">
+    <f:facet name="first">
+      <af:panelBox text="Contact Invitees" id="pb1">
+        <f:facet name="toolbar">
+          <af:panelGroupLayout id="pgl1">
+            <af:button text="Create" id="b1" disabled="#{!bindings.CreateInsert1.enabled}"
+                       actionListener="#{bindings.CreateInsert1.execute}" action="createContact"/>
+            <af:spacer width="20" height="10" id="s1"/>
+            <af:button text="Delete" id="b2" disabled="#{!bindings.Delete1.enabled}"
+                       actionListener="#{bindings.Delete1.execute}"/>
+          </af:panelGroupLayout>
+        </f:facet>
+        <af:table value="#{bindings.ContactInviteesVO1.collectionModel}" var="row"
+                  rows="#{bindings.ContactInviteesVO1.rangeSize}"
+                  emptyText="#{bindings.ContactInviteesVO1.viewable ? 'No data to display.' : 'Access Denied.'}"
+                  rowBandingInterval="0" selectedRowKeys="#{bindings.ContactInviteesVO1.collectionModel.selectedRow}"
+                  selectionListener="#{bindings.ContactInviteesVO1.collectionModel.makeCurrent}" rowSelection="single"
+                  fetchSize="#{bindings.ContactInviteesVO1.rangeSize}"
+                  filterModel="#{bindings.ContactInviteesVO1Query.queryDescriptor}" filterVisible="true"
+                  queryListener="#{bindings.ContactInviteesVO1Query.processQuery}" varStatus="vs" id="t1"
+                  partialTriggers="::b1 ::b2">
+          <af:column sortProperty="#{bindings.ContactInviteesVO1.hints.AppointmentId.name}" filterable="true"
+                     sortable="true" headerText="#{bindings.ContactInviteesVO1.hints.AppointmentId.label}" id="c1">
+            <af:selectOneChoice value="#{row.bindings.AppointmentId.inputValue}"
+                                label="#{row.bindings.AppointmentId.label}"
+                                required="#{bindings.ContactInviteesVO1.hints.AppointmentId.mandatory}"
+                                shortDesc="#{bindings.ContactInviteesVO1.hints.AppointmentId.tooltip}" id="soc1">
+              <f:selectItems value="#{row.bindings.AppointmentId.items}" id="si1"/>
+              <f:validator binding="#{row.bindings.AppointmentId.validator}"/>
+            </af:selectOneChoice>
+          </af:column>
+          <af:column sortProperty="#{bindings.ContactInviteesVO1.hints.ContactId.name}" filterable="true"
+                     sortable="true" headerText="#{bindings.ContactInviteesVO1.hints.ContactId.label}" id="c2">
+            <af:selectOneChoice value="#{row.bindings.ContactId.inputValue}" label="#{row.bindings.ContactId.label}"
+                                required="#{bindings.ContactInviteesVO1.hints.ContactId.mandatory}"
+                                shortDesc="#{bindings.ContactInviteesVO1.hints.ContactId.tooltip}" id="soc2">
+              <f:selectItems value="#{row.bindings.ContactId.items}" id="si2"/>
+              <f:validator binding="#{row.bindings.ContactId.validator}"/>
+            </af:selectOneChoice>
+          </af:column>
+        </af:table>
+      </af:panelBox>
+    </f:facet>
+    <f:facet name="second">
+      <af:panelBox text="User Invitees" id="pb2">
+        <f:facet name="toolbar">
+          <af:panelGroupLayout id="pgl2">
+            <af:button actionListener="#{bindings.CreateInsert.execute}" text="Create"
+                       disabled="#{!bindings.CreateInsert.enabled}" id="b3" action="createUser"/>
+            <af:button actionListener="#{bindings.Delete.execute}" text="Delete" disabled="#{!bindings.Delete.enabled}"
+                       id="b4"/>
+            <f:facet name="separator">
+              <af:spacer width="20" height="10" id="s2"/>
+            </f:facet>
+          </af:panelGroupLayout>
+        </f:facet>
+        <af:table value="#{bindings.UserInviteesVO1.collectionModel}" var="row"
+                  rows="#{bindings.UserInviteesVO1.rangeSize}"
+                  emptyText="#{bindings.UserInviteesVO1.viewable ? 'No data to display.' : 'Access Denied.'}"
+                  rowBandingInterval="0" selectedRowKeys="#{bindings.UserInviteesVO1.collectionModel.selectedRow}"
+                  selectionListener="#{bindings.UserInviteesVO1.collectionModel.makeCurrent}" rowSelection="single"
+                  fetchSize="#{bindings.UserInviteesVO1.rangeSize}"
+                  filterModel="#{bindings.UserInviteesVO1Query.queryDescriptor}" filterVisible="true"
+                  queryListener="#{bindings.UserInviteesVO1Query.processQuery}" varStatus="vs" id="t2"
+                  partialTriggers="::b3 ::b4">
+          <af:column sortProperty="#{bindings.UserInviteesVO1.hints.AppointmentId.name}" filterable="true"
+                     sortable="true" headerText="#{bindings.UserInviteesVO1.hints.AppointmentId.label}" id="c3">
+            <af:selectOneChoice value="#{row.bindings.AppointmentId.inputValue}"
+                                label="#{row.bindings.AppointmentId.label}"
+                                required="#{bindings.UserInviteesVO1.hints.AppointmentId.mandatory}"
+                                shortDesc="#{bindings.UserInviteesVO1.hints.AppointmentId.tooltip}" id="soc3">
+              <f:selectItems value="#{row.bindings.AppointmentId.items}" id="si3"/>
+              <f:validator binding="#{row.bindings.AppointmentId.validator}"/>
+            </af:selectOneChoice>
+          </af:column>
+          <af:column sortProperty="#{bindings.UserInviteesVO1.hints.UserId.name}" filterable="true" sortable="true"
+                     headerText="#{bindings.UserInviteesVO1.hints.UserId.label}" id="c4">
+            <af:selectOneChoice value="#{row.bindings.UserId.inputValue}" label="#{row.bindings.UserId.label}"
+                                required="#{bindings.UserInviteesVO1.hints.UserId.mandatory}"
+                                shortDesc="#{bindings.UserInviteesVO1.hints.UserId.tooltip}" id="soc4">
+              <f:selectItems value="#{row.bindings.UserId.items}" id="si4"/>
+              <f:validator binding="#{row.bindings.UserId.validator}"/>
+            </af:selectOneChoice>
+          </af:column>
+        </af:table>
+      </af:panelBox>
+    </f:facet>
+  </af:panelSplitter>
+</ui:composition>

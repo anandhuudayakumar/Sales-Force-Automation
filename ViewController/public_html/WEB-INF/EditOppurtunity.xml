@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<adfc-config xmlns="http://xmlns.oracle.com/adf/controller" version="1.2">
+  <task-flow-definition id="EditOppurtunity1">
+    <default-activity>EditOppurtunity</default-activity>
+    <data-control-scope>
+      <shared/>
+    </data-control-scope>
+    <view id="EditOppurtunity">
+      <page>/EditOppurtunity.jsff</page>
+    </view>
+    <task-flow-call id="OppurtunityInteraction">
+      <task-flow-reference>
+        <document>/WEB-INF/OppurtunityInteraction.xml</document>
+        <id>OppurtunityInteraction</id>
+      </task-flow-reference>
+    </task-flow-call>
+    <task-flow-call id="OppContact">
+      <task-flow-reference>
+        <document>/WEB-INF/OppContact.xml</document>
+        <id>OppContact</id>
+      </task-flow-reference>
+    </task-flow-call>
+    <task-flow-call id="OppRevenueitem">
+      <task-flow-reference>
+        <document>/WEB-INF/OppRevenueitem.xml</document>
+        <id>OppRevenueitem</id>
+      </task-flow-reference>
+    </task-flow-call>
+    <task-flow-call id="OppSales">
+      <task-flow-reference>
+        <document>/WEB-INF/OppSales.xml</document>
+        <id>OppSales</id>
+      </task-flow-reference>
+    </task-flow-call>
+    <task-flow-call id="OppTask">
+      <task-flow-reference>
+        <document>/WEB-INF/OppTask.xml</document>
+        <id>OppTask</id>
+      </task-flow-reference>
+    </task-flow-call>
+    <control-flow-rule id="__1">
+      <from-activity-id>EditOppurtunity</from-activity-id>
+      <control-flow-case id="__2">
+        <from-outcome>interaction</from-outcome>
+        <to-activity-id>OppurtunityInteraction</to-activity-id>
+      </control-flow-case>
+      <control-flow-case id="__5">
+        <from-outcome>contact</from-outcome>
+        <to-activity-id>OppContact</to-activity-id>
+      </control-flow-case>
+      <control-flow-case id="__6">
+        <from-outcome>task</from-outcome>
+        <to-activity-id>OppTask</to-activity-id>
+      </control-flow-case>
+      <control-flow-case id="__7">
+        <from-outcome>sales</from-outcome>
+        <to-activity-id>OppSales</to-activity-id>
+      </control-flow-case>
+      <control-flow-case id="__8">
+        <from-outcome>revenueitem</from-outcome>
+        <to-activity-id>OppRevenueitem</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <use-page-fragments/>
+  </task-flow-definition>
+</adfc-config>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<adfc-config xmlns="http://xmlns.oracle.com/adf/controller" version="1.2">
+  <task-flow-definition id="AccountContacts">
+    <default-activity>searchcontact</default-activity>
+    <data-control-scope>
+      <shared/>
+    </data-control-scope>
+    <view id="searchcontact">
+      <page>/searchcontactaccount.jsff</page>
+    </view>
+    <view id="editcontact">
+      <page>/editcontactaccount.jsff</page>
+    </view>
+    <view id="createcontact">
+      <page>/createcontactaccount.jsff</page>
+    </view>
+    <task-flow-return id="taskFlowReturn1">
+      <outcome>
+        <name>taskFlowReturn1</name>
+      </outcome>
+    </task-flow-return>
+    <control-flow-rule id="__1">
+      <from-activity-id>searchcontact</from-activity-id>
+      <control-flow-case id="__2">
+        <from-outcome>editcontact</from-outcome>
+        <to-activity-id>editcontact</to-activity-id>
+      </control-flow-case>
+      <control-flow-case id="__3">
+        <from-outcome>createcontact</from-outcome>
+        <to-activity-id>createcontact</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <control-flow-rule id="__4">
+      <from-activity-id>editcontact</from-activity-id>
+      <control-flow-case id="__5">
+        <from-outcome>back</from-outcome>
+        <to-activity-id>searchcontact</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <control-flow-rule id="__6">
+      <from-activity-id>createcontact</from-activity-id>
+      <control-flow-case id="__7">
+        <from-outcome>back</from-outcome>
+        <to-activity-id>searchcontact</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <control-flow-rule id="__8">
+      <from-activity-id>*</from-activity-id>
+      <control-flow-case id="__9">
+        <from-outcome>backtoaccount</from-outcome>
+        <to-activity-id>taskFlowReturn1</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <use-page-fragments/>
+  </task-flow-definition>
+</adfc-config>

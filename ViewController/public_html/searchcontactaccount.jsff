@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ui:composition xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+  <af:panelGroupLayout layout="vertical" id="pgl1">
+    <af:panelHeader text="Contacts" id="ph1">
+      <af:button actionListener="#{bindings.CreateInsert.execute}" text="Create"
+                 disabled="#{!bindings.CreateInsert.enabled}" id="b1" action="createcontact"/>
+      <af:button text="back" id="b2" action="backtoaccount"/>
+      <af:query id="qryId1" headerText="Search" disclosed="true" value="#{bindings.ContactsQuery.queryDescriptor}"
+                model="#{bindings.ContactsQuery.queryModel}" queryListener="#{bindings.ContactsQuery.processQuery}"
+                queryOperationListener="#{bindings.ContactsQuery.processQueryOperation}" resultComponentId="::resId1">
+        
+      </af:query>
+    </af:panelHeader>
+    <af:table value="#{bindings.ContactsVO2.collectionModel}" var="row" rows="#{bindings.ContactsVO2.rangeSize}"
+              emptyText="#{bindings.ContactsVO2.viewable ? 'No data to display.' : 'Access Denied.'}"
+              rowBandingInterval="0" selectedRowKeys="#{bindings.ContactsVO2.collectionModel.selectedRow}"
+              selectionListener="#{bindings.ContactsVO2.collectionModel.makeCurrent}" rowSelection="single"
+              fetchSize="#{bindings.ContactsVO2.rangeSize}" filterModel="#{bindings.ContactsQuery.queryDescriptor}"
+              filterVisible="true" queryListener="#{bindings.ContactsQuery.processQuery}" varStatus="vs" id="resId1"
+              partialTriggers="::b1">
+      <af:column sortProperty="#{bindings.ContactsVO2.hints.ContactName.name}" filterable="true" sortable="true"
+                 headerText="#{bindings.ContactsVO2.hints.ContactName.label}" id="resId1c1">
+        <af:link shortDesc="#{bindings.ContactsVO2.hints.ContactName.tooltip}" id="ot1" text="#{row.ContactName}"
+                 action="editcontact"/>
+      </af:column>
+      <af:column sortProperty="#{bindings.ContactsVO2.hints.Title.name}" filterable="true" sortable="true"
+                 headerText="#{bindings.ContactsVO2.hints.Title.label}" id="resId1c2">
+        <af:outputText value="#{row.Title}" shortDesc="#{bindings.ContactsVO2.hints.Title.tooltip}" id="ot2"/>
+      </af:column>
+      <af:column sortProperty="#{bindings.ContactsVO2.hints.Department.name}" filterable="true" sortable="true"
+                 headerText="#{bindings.ContactsVO2.hints.Department.label}" id="resId1c3">
+        <af:outputText value="#{row.Department}" shortDesc="#{bindings.ContactsVO2.hints.Department.tooltip}" id="ot3"/>
+      </af:column>
+      <af:column sortProperty="#{bindings.ContactsVO2.hints.WorkPhone.name}" filterable="true" sortable="true"
+                 headerText="#{bindings.ContactsVO2.hints.WorkPhone.label}" id="resId1c4">
+        <af:outputText value="#{row.WorkPhone}" shortDesc="#{bindings.ContactsVO2.hints.WorkPhone.tooltip}" id="ot4">
+          <af:convertNumber groupingUsed="false" pattern="#{bindings.ContactsVO2.hints.WorkPhone.format}"/>
+        </af:outputText>
+      </af:column>
+      <af:column sortProperty="#{bindings.ContactsVO2.hints.Email.name}" filterable="true" sortable="true"
+                 headerText="#{bindings.ContactsVO2.hints.Email.label}" id="resId1c5">
+        <af:outputText value="#{row.Email}" shortDesc="#{bindings.ContactsVO2.hints.Email.tooltip}" id="ot5"/>
+      </af:column>
+      <af:column sortProperty="#{bindings.ContactsVO2.hints.InfluenceLevel.name}" filterable="true" sortable="true"
+                 headerText="#{bindings.ContactsVO2.hints.InfluenceLevel.label}" id="resId1c6">
+        <af:outputText value="#{row.InfluenceLevel}" shortDesc="#{bindings.ContactsVO2.hints.InfluenceLevel.tooltip}"
+                       id="ot6">
+          <af:convertNumber groupingUsed="false" pattern="#{bindings.ContactsVO2.hints.InfluenceLevel.format}"/>
+        </af:outputText>
+      </af:column>
+    </af:table>
+  </af:panelGroupLayout>
+</ui:composition>

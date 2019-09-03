@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE Association SYSTEM "jbo_03_01.dtd">
+<!---->
+<Association
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="Inviteesv1AccAppointmentFkAssoc"
+  Version="12.2.1.9.14"
+  InheritPersonalization="merge">
+  <DesignTime>
+    <Attr Name="_isCodegen" Value="true"/>
+  </DesignTime>
+  <AssociationEnd
+    Name="AppointmentEO"
+    Cardinality="1"
+    Source="true"
+    Owner="model.entities.AppointmentEO">
+    <DesignTime>
+      <Attr Name="_isUpdateable" Value="true"/>
+      <Attr Name="_minCardinality" Value="1"/>
+      <Attr Name="_aggregation" Value="0"/>
+      <Attr Name="_finderName" Value="AppointmentEO"/>
+      <Attr Name="_foreignKey" Value="model.entities.AppointmentEO.AccountAppointmentPk"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.entities.AppointmentEO.AppId"/>
+    </AttrArray>
+  </AssociationEnd>
+  <AssociationEnd
+    Name="ContactInviteesEO"
+    Cardinality="-1"
+    Owner="model.entities.ContactInviteesEO">
+    <DesignTime>
+      <Attr Name="_isUpdateable" Value="true"/>
+      <Attr Name="_aggregation" Value="0"/>
+      <Attr Name="_finderName" Value="ContactInviteesEO"/>
+      <Attr Name="_foreignKey" Value="model.entities.ContactInviteesEO.Inviteesv1AccAppointmentFk"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.entities.ContactInviteesEO.AppointmentId"/>
+    </AttrArray>
+  </AssociationEnd>
+</Association>

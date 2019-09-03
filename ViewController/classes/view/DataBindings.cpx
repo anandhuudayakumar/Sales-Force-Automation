@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Application xmlns="http://xmlns.oracle.com/adfm/application" version="12.2.1.9.14" id="DataBindings"
+             SeparateXMLFiles="false" Package="view" ClientType="Generic">
+  <definitionFactories>
+    <factory nameSpace="http://xmlns.oracle.com/adf/controller/binding"
+             className="oracle.adf.controller.internal.binding.TaskFlowBindingDefFactoryImpl"/>
+    <dtfactory className="oracle.adf.controller.internal.dtrt.binding.BindingDTObjectFactory"/>
+  </definitionFactories>
+  <pageMap>
+    <page path="/Search.jspx" usageId="view_SearchPageDef"/>
+    <page path="/Create.jspx" usageId="view_CreatePageDef"/>
+    <page path="/Edit.jspx" usageId="view_EditPageDef"/>
+    <page path="/OppurtunityCreate.jspx" usageId="view_OppurtunityCreatePageDef"/>
+    <page path="/untitled1.jspx" usageId="view_untitled1PageDef"/>
+    <page path="/Searchaccount.jsf" usageId="view_SearchaccountPageDef"/>
+    <page path="/CreateAccount.jsf" usageId="view_CreateAccountPageDef"/>
+    <page path="/Searchaccount.jsff" usageId="view_SearchaccountPageDef1"/>
+    <page path="/RunAccount.jsf" usageId="view_untitled2PageDef"/>
+    <page path="/CreateAccount.jsff" usageId="view_CreateAccountPageDef1"/>
+    <page path="/SearchAccountAppointment.jsff" usageId="view_SearchAccountAppointmentPageDef"/>
+    <page path="/EditAccount.jsff" usageId="view_EditAccountPageDef"/>
+    <page path="/ViewAccountAppointment.jsff" usageId="view_ViewAccountAppointmentPageDef"/>
+    <page path="/CreateAccountAppointment.jsff" usageId="view_CreateAccountAppointmentPageDef"/>
+    <page path="/searchcontactaccount.jsff" usageId="view_searchcontactaccountPageDef"/>
+    <page path="/editcontactaccount.jsff" usageId="view_editcontactaccountPageDef"/>
+    <page path="/createcontactaccount.jsff" usageId="view_createcontactaccountPageDef"/>
+    <page path="/searchtaskacc.jsff" usageId="view_searchtaskaccPageDef"/>
+    <page path="/createtaskacc.jsff" usageId="view_createtaskaccPageDef"/>
+    <page path="/edittaskacc.jsff" usageId="view_edittaskaccPageDef"/>
+    <page path="/ViewAccOpp.jsff" usageId="view_ViewAccOppPageDef"/>
+    <page path="/CreateAccOpp.jsff" usageId="view_CreateAccOppPageDef"/>
+    <page path="/EditAccOpp.jsff" usageId="view_EditAccOppPageDef"/>
+    <page path="/viewOppurtunity.jsff" usageId="view_viewOppurtunityPageDef"/>
+    <page path="/CreateOppurtunities.jsff" usageId="view_CreateOppurtunitiesPageDef"/>
+    <page path="/EditOppurtunity.jsff" usageId="view_EditOppurtunityPageDef"/>
+    <page path="/RunOppurtunity.jsf" usageId="view_RunOppurtunityPageDef"/>
+    <page path="/viewcontactinteraction.jsff" usageId="view_viewcontactinteractionPageDef"/>
+    <page path="/createoppinteraction.jsff" usageId="view_createoppinteractionPageDef"/>
+    <page path="/editoppinteraction.jsff" usageId="view_editoppinteractionPageDef"/>
+    <page path="/adminHome.jsff" usageId="view_adminHomePageDef"/>
+    <page path="/admin.jsf" usageId="view_adminPageDef"/>
+    <page path="/UserAccount.jsff" usageId="view_UserAccountPageDef"/>
+    <page path="/Adminrun.jsf" usageId="view_AdminrunPageDef"/>
+    <page path="/Admin.jsf" usageId="view_adminPageDef"/>
+    <page path="/userAccountEdit.jsff" usageId="view_userAccountEditPageDef"/>
+    <page path="/AdminTestHOme.jsf" usageId="view_AdminTestHOmePageDef"/>
+    <page path="/AdminHomeMain.jsff" usageId="view_AdminHomeMainPageDef"/>
+    <page path="/contactInvitiesHome.jsff" usageId="view_contactInvitiesHomePageDef"/>
+    <page path="/contactInvitiesCreate.jsff" usageId="view_contactInvitiesCreatePageDef"/>
+    <page path="/contactInvitiesEdit.jsff" usageId="view_contactInvitiesEditPageDef"/>
+    <page path="/userEdit.jsff" usageId="view_userEditPageDef"/>
+    <page path="/createUser.jsff" usageId="view_createUserPageDef"/>
+    <page path="/test3.jsf" usageId="view_test3PageDef"/>
+  </pageMap>
+  <pageDefinitionUsages>
+    <page id="view_SearchPageDef" path="view.pageDefs.SearchPageDef"/>
+    <page id="view_CreatePageDef" path="view.pageDefs.CreatePageDef"/>
+    <page id="view_EditPageDef" path="view.pageDefs.EditPageDef"/>
+    <page id="view_OppurtunityCreatePageDef" path="view.pageDefs.OppurtunityCreatePageDef"/>
+    <page id="view_untitled1PageDef" path="view.pageDefs.untitled1PageDef"/>
+    <page id="view_SearchaccountPageDef" path="view.pageDefs.SearchaccountPageDef"/>
+    <page id="view_CreateAccountPageDef" path="view.pageDefs.CreateAccountPageDef"/>
+    <page id="view_SearchaccountPageDef1" path="view.pageDefs.SearchaccountPageDef1"/>
+    <page id="view_untitled2PageDef" path="view.pageDefs.untitled2PageDef"/>
+    <page id="view_CreateAccountPageDef1" path="view.pageDefs.CreateAccountPageDef1"/>
+    <page id="view_SearchAccountAppointmentPageDef" path="view.pageDefs.SearchAccountAppointmentPageDef"/>
+    <page id="view_EditAccountPageDef" path="view.pageDefs.EditAccountPageDef"/>
+    <page id="view_ViewAccountAppointmentPageDef" path="view.pageDefs.ViewAccountAppointmentPageDef"/>
+    <page id="view_CreateAccountAppointmentPageDef" path="view.pageDefs.CreateAccountAppointmentPageDef"/>
+    <page id="view_searchcontactaccountPageDef" path="view.pageDefs.searchcontactaccountPageDef"/>
+    <page id="view_editcontactaccountPageDef" path="view.pageDefs.editcontactaccountPageDef"/>
+    <page id="view_createcontactaccountPageDef" path="view.pageDefs.createcontactaccountPageDef"/>
+    <page id="view_searchtaskaccPageDef" path="view.pageDefs.searchtaskaccPageDef"/>
+    <page id="view_createtaskaccPageDef" path="view.pageDefs.createtaskaccPageDef"/>
+    <page id="view_edittaskaccPageDef" path="view.pageDefs.edittaskaccPageDef"/>
+    <page id="view_ViewAccOppPageDef" path="view.pageDefs.ViewAccOppPageDef"/>
+    <page id="view_CreateAccOppPageDef" path="view.pageDefs.CreateAccOppPageDef"/>
+    <page id="view_EditAccOppPageDef" path="view.pageDefs.EditAccOppPageDef"/>
+    <page id="view_viewOppurtunityPageDef" path="view.pageDefs.viewOppurtunityPageDef"/>
+    <page id="view_CreateOppurtunitiesPageDef" path="view.pageDefs.CreateOppurtunitiesPageDef"/>
+    <page id="view_EditOppurtunityPageDef" path="view.pageDefs.EditOppurtunityPageDef"/>
+    <page id="view_RunOppurtunityPageDef" path="view.pageDefs.RunOppurtunityPageDef"/>
+    <page id="view_viewcontactinteractionPageDef" path="view.pageDefs.viewcontactinteractionPageDef"/>
+    <page id="view_createoppinteractionPageDef" path="view.pageDefs.createoppinteractionPageDef"/>
+    <page id="view_editoppinteractionPageDef" path="view.pageDefs.editoppinteractionPageDef"/>
+    <page id="view_adminHomePageDef" path="view.pageDefs.adminHomePageDef"/>
+    <page id="view_adminPageDef" path="view.pageDefs.adminPageDef"/>
+    <page id="view_UserAccountPageDef" path="view.pageDefs.UserAccountPageDef"/>
+    <page id="view_AdminrunPageDef" path="view.pageDefs.AdminrunPageDef"/>
+    <page id="view_userAccountEditPageDef" path="view.pageDefs.userAccountEditPageDef"/>
+    <page id="view_AdminTestHOmePageDef" path="view.pageDefs.AdminTestHOmePageDef"/>
+    <page id="view_AdminHomeMainPageDef" path="view.pageDefs.AdminHomeMainPageDef"/>
+    <page id="view_contactInvitiesHomePageDef" path="view.pageDefs.contactInvitiesHomePageDef"/>
+    <page id="view_contactInvitiesCreatePageDef" path="view.pageDefs.contactInvitiesCreatePageDef"/>
+    <page id="view_contactInvitiesEditPageDef" path="view.pageDefs.contactInvitiesEditPageDef"/>
+    <page id="view_userEditPageDef" path="view.pageDefs.userEditPageDef"/>
+    <page id="view_createUserPageDef" path="view.pageDefs.createUserPageDef"/>
+    <page id="view_test3PageDef" path="view.pageDefs.test3PageDef"/>
+  </pageDefinitionUsages>
+  <dataControlUsages>
+    <BC4JDataControl id="AppModuleDataControl" Package="model.entities"
+                     FactoryClass="oracle.adf.model.bc4j.DataControlFactoryImpl" SupportsTransactions="true"
+                     SupportsFindMode="true" SupportsRangesize="true" SupportsResetState="true"
+                     SupportsSortCollection="true" Configuration="AppModuleLocal" syncMode="Immediate"
+                     xmlns="http://xmlns.oracle.com/adfm/datacontrol"/>
+  </dataControlUsages>
+</Application>

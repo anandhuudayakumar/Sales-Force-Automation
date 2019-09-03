@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.2.1.9.14" id="SearchPageDef"
+                Package="view.pageDefs">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+    <iterator Binds="CustomerAccountVO1" RangeSize="25" DataControl="AppModuleDataControl"
+              id="CustomerAccountVO1Iterator"/>
+    <searchRegion Criteria="CustomerAccountSearch" Customizer="oracle.jbo.uicli.binding.JUSearchBindingCustomizer"
+                  Binds="CustomerAccountVO1Iterator" id="CustomerAccountVOCriteriaQuery"/>
+  </executables>
+  <bindings>
+    <tree IterBinding="CustomerAccountVO1Iterator" id="CustomerAccountVO1">
+      <nodeDefinition DefName="model.view.CustomerAccountVO" Name="CustomerAccountVO10">
+        <AttrNames>
+          <Item Value="AccountName"/>
+          <Item Value="AccountUrl"/>
+          <Item Value="ParentAccount"/>
+          <Item Value="Ceo"/>
+          <Item Value="NoOfEmployees"/>
+          <Item Value="Email"/>
+          <Item Value="PrimaryContact"/>
+        </AttrNames>
+      </nodeDefinition>
+    </tree>
+    <action IterBinding="CustomerAccountVO1Iterator" id="CreateInsert" RequiresUpdateModel="true"
+            Action="createInsertRow"/>
+    <action IterBinding="CustomerAccountVO1Iterator" id="setCurrentRowWithKey" RequiresUpdateModel="false"
+            Action="setCurrentRowWithKey">
+      <NamedData NDName="rowKey" NDType="java.lang.String"/>
+    </action>
+    <action id="Commit" RequiresUpdateModel="true" Action="commitTransaction" DataControl="AppModuleDataControl"/>
+    <action id="Rollback" RequiresUpdateModel="false" Action="rollbackTransaction" DataControl="AppModuleDataControl"/>
+    <action IterBinding="CustomerAccountVO1Iterator" id="Delete" RequiresUpdateModel="false" Action="removeCurrentRow"/>
+  </bindings>
+</pageDefinition>

@@ -1,0 +1,617 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BC4JConfig version="11.1" xmlns="http://xmlns.oracle.com/bc4j/configuration">
+   <AppModuleConfigBag ApplicationName="model.entities.AppModule">
+      <AppModuleConfig name="16CD2DDCC9F" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CD2E1379D" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CD2E38E67" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CD31D64F5" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CD31E2142" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CD3215187" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CD32376C0" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CD32E97B9" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CD3336EBD" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CD34E4D00" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CD353637B" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CD42660D9" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CD687395C" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CD68983A2" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CD68A54D7" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CD68BE194" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CD69D917B" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CD69DADAC" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CD69EA480" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CD69FC99F" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CD6A04F86" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CD6A2DEF3" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CD6A4C17F" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CD6B732D0" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CD6B951B1" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CD6BA8038" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CD6C0468B" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CD6D34A4B" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CD6D4A2A5" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CD6D6A460" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CD6D7C1C3" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CD6D9E1A4" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CD6DD0E48" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CD6EF9B76" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CD6F644E1" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CD70414E1" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CD70E09C1" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CD76EA21B" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CD77792AA" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CD7FF6B15" IsLazyLoadingTrue="true" DBconnection="java:comp/env/jdbc/DemoConnectionDS" ApplicationName="model.entities.AppModule" jbo.project="model.Model" BC4JConfigName="AppModuleLocal" JDBCName="DemoConnection" DeployPlatform="LOCAL" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory">
+         <Database JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle" jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:LastUsedConfiguration="AppModuleLocal" ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CD802645A" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CD8051C75" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CD808ADDB" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CD80C9E92" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CD80FC406" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CD811463F" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CD815AA00" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CD81E9701" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CD821EAFA" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CD823C055" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CD8275F24" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CD82A69E4" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CD83DACBA" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CD83FB0FE" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CD84240D6" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CD8444294" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CD8453AF0" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CD84AB8E7" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CD84BCCF3" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CD84C8DE7" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CD84F0366" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CD85958F6" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CD85A3E52" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CDBB89D6F" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CDBB97F6C" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CDBBD3052" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CDBD13FF5" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CDBDA42B4" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CDBE6E4D8" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CDBE7F763" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CDBF420D9" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CDC214638" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CDC2297C1" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CDC2399A6" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CDC2BBCF2" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CDC464600" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CDC48A9A0" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CDC49860E" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CDC7B603E" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CDC7D3539" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CDC7E242C" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CDC7ECD11" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CDC9577D4" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CDC9711EA" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CDCA0DCD2" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CDCA1C185" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CDCA70F7A" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CDCB8E470" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CDCBCA4F4" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CDCC385EB" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CDCC7FB60" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CDCCA57EB" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CE0FD9AE5" IsLazyLoadingTrue="true" DBconnection="java:comp/env/jdbc/DemoConnectionDS" ApplicationName="model.entities.AppModule" jbo.project="model.Model" BC4JConfigName="AppModuleLocal" JDBCName="DemoConnection" DeployPlatform="LOCAL" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory">
+         <Database JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle" jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:LastUsedConfiguration="AppModuleLocal" ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CE120A996" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CE121F590" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CE123A1B8" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CE1252079" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CE14B8744" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CE14CD632" JDBCName="DemoConnection" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleLocal" ApplicationName="model.entities.AppModule" DBconnection="java:comp/env/jdbc/DemoConnectionDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CECCB8E94" IsLazyLoadingTrue="true" DBconnection="java:comp/env/jdbc/DemoConnectionDS" ApplicationName="model.entities.AppModule" jbo.project="model.Model" BC4JConfigName="AppModuleLocal" JDBCName="DemoConnection" DeployPlatform="LOCAL" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory">
+         <Database JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle" jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:LastUsedConfiguration="AppModuleLocal" ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CED3685DE" IsLazyLoadingTrue="true" DBconnection="java:comp/env/jdbc/DemoConnectionDS" ApplicationName="model.entities.AppModule" jbo.project="model.Model" BC4JConfigName="AppModuleLocal" JDBCName="DemoConnection" DeployPlatform="LOCAL" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory">
+         <Database JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle" jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:LastUsedConfiguration="AppModuleLocal" ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="16CF6F4493D" IsLazyLoadingTrue="true" DBconnection="java:comp/env/jdbc/DemoConnectionDS" ApplicationName="model.entities.AppModule" jbo.project="model.Model" BC4JConfigName="AppModuleLocal" JDBCName="DemoConnection" DeployPlatform="LOCAL" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory">
+         <Database JDBCDataSource="java:comp/env/jdbc/DemoConnectionDS" jbo.SQLBuilder="Oracle" jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps"/>
+         <Security AppModuleJndiName="model.entities.AppModule"/>
+         <Tester FullProxyInterfaceName="model.entities.common.AppModule"/>
+         <Custom ns0:LastUsedConfiguration="AppModuleLocal" ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+   </AppModuleConfigBag>
+</BC4JConfig>

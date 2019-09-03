@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ui:composition xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:af="http://xmlns.oracle.com/adf/faces/rich"
+                xmlns:f="http://java.sun.com/jsf/core">
+  <af:panelGridLayout id="pgl1">
+    <af:gridRow marginTop="5px" height="auto" marginBottom="5px" id="gr1">
+      <af:gridCell marginStart="5px" width="34%" id="gc1" halign="stretch">
+        <af:table value="#{bindings.UserAccountsVO11.collectionModel}" var="row"
+                  rows="#{bindings.UserAccountsVO11.rangeSize}"
+                  emptyText="#{bindings.UserAccountsVO11.viewable ? 'No data to display.' : 'Access Denied.'}"
+                  rowBandingInterval="0" fetchSize="#{bindings.UserAccountsVO11.rangeSize}" id="t1">
+          <af:column headerText="#{bindings.UserAccountsVO11.hints.UserName.label}" id="c1">
+            <af:link shortDesc="#{bindings.UserAccountsVO11.hints.UserName.tooltip}" id="it1"
+                     text="#{row.bindings.UserName.inputValue}"/>
+          </af:column>
+          <af:column headerText="#{bindings.UserAccountsVO11.hints.UserEmployeeId.label}" id="c2">
+            <af:inputText value="#{row.bindings.UserEmployeeId.inputValue}"
+                          label="#{bindings.UserAccountsVO11.hints.UserEmployeeId.label}"
+                          required="#{bindings.UserAccountsVO11.hints.UserEmployeeId.mandatory}"
+                          columns="#{bindings.UserAccountsVO11.hints.UserEmployeeId.displayWidth}"
+                          maximumLength="#{bindings.UserAccountsVO11.hints.UserEmployeeId.precision}"
+                          shortDesc="#{bindings.UserAccountsVO11.hints.UserEmployeeId.tooltip}" id="it2">
+              <f:validator binding="#{row.bindings.UserEmployeeId.validator}"/>
+              <af:convertNumber groupingUsed="false"
+                                pattern="#{bindings.UserAccountsVO11.hints.UserEmployeeId.format}"/>
+            </af:inputText>
+          </af:column>
+        </af:table>
+        <af:button text="User Account" id="b1" action="userAccount"/>
+      </af:gridCell>
+      <af:gridCell marginStart="5px" width="33%" id="gc2" halign="stretch">
+        <af:table value="#{bindings.RolesVO1.collectionModel}" var="row" rows="#{bindings.RolesVO1.rangeSize}"
+                  emptyText="#{bindings.RolesVO1.viewable ? 'No data to display.' : 'Access Denied.'}"
+                  rowBandingInterval="0" fetchSize="#{bindings.RolesVO1.rangeSize}" id="t2">
+          <af:column headerText="#{bindings.RolesVO1.hints.RoleName.label}" id="c3">
+            <af:inputText value="#{row.bindings.RoleName.inputValue}" label="#{bindings.RolesVO1.hints.RoleName.label}"
+                          required="#{bindings.RolesVO1.hints.RoleName.mandatory}"
+                          columns="#{bindings.RolesVO1.hints.RoleName.displayWidth}"
+                          maximumLength="#{bindings.RolesVO1.hints.RoleName.precision}"
+                          shortDesc="#{bindings.RolesVO1.hints.RoleName.tooltip}" id="it3">
+              <f:validator binding="#{row.bindings.RoleName.validator}"/>
+            </af:inputText>
+          </af:column>
+          <af:column headerText="#{bindings.RolesVO1.hints.RoleDescription.label}" id="c4">
+            <af:inputText value="#{row.bindings.RoleDescription.inputValue}"
+                          label="#{bindings.RolesVO1.hints.RoleDescription.label}"
+                          required="#{bindings.RolesVO1.hints.RoleDescription.mandatory}"
+                          columns="#{bindings.RolesVO1.hints.RoleDescription.displayWidth}"
+                          maximumLength="#{bindings.RolesVO1.hints.RoleDescription.precision}"
+                          shortDesc="#{bindings.RolesVO1.hints.RoleDescription.tooltip}" id="it4">
+              <f:validator binding="#{row.bindings.RoleDescription.validator}"/>
+            </af:inputText>
+          </af:column>
+        </af:table>
+        <af:button text="Roles " id="b2" action="roles"/>
+      </af:gridCell>
+      <af:gridCell marginStart="5px" width="33%" marginEnd="5px" id="gc3" halign="stretch">
+        <af:table value="#{bindings.ProductCatalogVO1.collectionModel}" var="row"
+                  rows="#{bindings.ProductCatalogVO1.rangeSize}"
+                  emptyText="#{bindings.ProductCatalogVO1.viewable ? 'No data to display.' : 'Access Denied.'}"
+                  rowBandingInterval="0" fetchSize="#{bindings.ProductCatalogVO1.rangeSize}" id="t3">
+          <af:column headerText="#{bindings.ProductCatalogVO1.hints.ProductCode.label}" id="c5">
+            <af:inputText value="#{row.bindings.ProductCode.inputValue}"
+                          label="#{bindings.ProductCatalogVO1.hints.ProductCode.label}"
+                          required="#{bindings.ProductCatalogVO1.hints.ProductCode.mandatory}"
+                          columns="#{bindings.ProductCatalogVO1.hints.ProductCode.displayWidth}"
+                          maximumLength="#{bindings.ProductCatalogVO1.hints.ProductCode.precision}"
+                          shortDesc="#{bindings.ProductCatalogVO1.hints.ProductCode.tooltip}" id="it5">
+              <f:validator binding="#{row.bindings.ProductCode.validator}"/>
+              <af:convertNumber groupingUsed="false" pattern="#{bindings.ProductCatalogVO1.hints.ProductCode.format}"/>
+            </af:inputText>
+          </af:column>
+          <af:column headerText="#{bindings.ProductCatalogVO1.hints.Productname.label}" id="c6">
+            <af:inputText value="#{row.bindings.Productname.inputValue}"
+                          label="#{bindings.ProductCatalogVO1.hints.Productname.label}"
+                          required="#{bindings.ProductCatalogVO1.hints.Productname.mandatory}"
+                          columns="#{bindings.ProductCatalogVO1.hints.Productname.displayWidth}"
+                          maximumLength="#{bindings.ProductCatalogVO1.hints.Productname.precision}"
+                          shortDesc="#{bindings.ProductCatalogVO1.hints.Productname.tooltip}" id="it6">
+              <f:validator binding="#{row.bindings.Productname.validator}"/>
+            </af:inputText>
+          </af:column>
+        </af:table>
+        <af:button text="Products" id="b3" action="product"/>
+      </af:gridCell>
+    </af:gridRow>
+  </af:panelGridLayout>
+</ui:composition>

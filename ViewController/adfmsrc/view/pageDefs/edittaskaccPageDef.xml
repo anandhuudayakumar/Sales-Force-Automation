@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.2.1.9.14" id="edittaskaccPageDef"
+                Package="view.pageDefs">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+    <iterator Binds="TasksVO2" RangeSize="25" DataControl="AppModuleDataControl" id="TasksVO2Iterator"/>
+  </executables>
+  <bindings>
+    <attributeValues IterBinding="TasksVO2Iterator" id="TaskName">
+      <AttrNames>
+        <Item Value="TaskName"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="TasksVO2Iterator" id="DueDate">
+      <AttrNames>
+        <Item Value="DueDate"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="TasksVO2Iterator" id="Priority">
+      <AttrNames>
+        <Item Value="Priority"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="TasksVO2Iterator" id="Description">
+      <AttrNames>
+        <Item Value="Description"/>
+      </AttrNames>
+    </attributeValues>
+    <list IterBinding="TasksVO2Iterator" StaticList="false" Uses="LOV_AssigneeId" id="AssigneeId"
+          DTSupportsMRU="false" SelectItemValueMode="ListObject"/>
+    <attributeValues IterBinding="TasksVO2Iterator" id="PercentageCompletion">
+      <AttrNames>
+        <Item Value="PercentageCompletion"/>
+      </AttrNames>
+    </attributeValues>
+    <action id="Commit" RequiresUpdateModel="true" Action="commitTransaction" DataControl="AppModuleDataControl"/>
+    <action id="Rollback" RequiresUpdateModel="false" Action="rollbackTransaction" DataControl="AppModuleDataControl"/>
+  </bindings>
+</pageDefinition>

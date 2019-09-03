@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<adfc-config xmlns="http://xmlns.oracle.com/adf/controller" version="1.2">
+  <task-flow-definition id="contactInvities">
+    <default-activity>InvitiesHome</default-activity>
+    <data-control-scope>
+      <shared/>
+    </data-control-scope>
+    <view id="InvitiesHome">
+      <page>/contactInvitiesHome.jsff</page>
+    </view>
+    <view id="contactInvitiesEdit">
+      <page>/contactInvitiesEdit.jsff</page>
+    </view>
+    <view id="contactInvitiesCreate">
+      <page>/contactInvitiesCreate.jsff</page>
+    </view>
+    <view id="userEdit">
+      <page>/userEdit.jsff</page>
+    </view>
+    <view id="createUser">
+      <page>/createUser.jsff</page>
+    </view>
+    <control-flow-rule id="__1">
+      <from-activity-id>InvitiesHome</from-activity-id>
+      <control-flow-case id="__2">
+        <from-outcome>createContact</from-outcome>
+        <to-activity-id>contactInvitiesCreate</to-activity-id>
+      </control-flow-case>
+      <control-flow-case id="__3">
+        <from-outcome>editContact</from-outcome>
+        <to-activity-id>contactInvitiesEdit</to-activity-id>
+      </control-flow-case>
+      <control-flow-case id="__8">
+        <from-outcome>editUser</from-outcome>
+        <to-activity-id>userEdit</to-activity-id>
+      </control-flow-case>
+      <control-flow-case id="__11">
+        <from-outcome>createUser</from-outcome>
+        <to-activity-id>createUser</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <control-flow-rule id="__4">
+      <from-activity-id>contactInvitiesCreate</from-activity-id>
+      <control-flow-case id="__5">
+        <from-outcome>backToHomeFromCreate</from-outcome>
+        <to-activity-id>InvitiesHome</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <control-flow-rule id="__6">
+      <from-activity-id>contactInvitiesEdit</from-activity-id>
+      <control-flow-case id="__7">
+        <from-outcome>backToHomeFromEdit</from-outcome>
+        <to-activity-id>InvitiesHome</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <control-flow-rule id="__9">
+      <from-activity-id>userEdit</from-activity-id>
+      <control-flow-case id="__10">
+        <from-outcome>backToHomeFromEditUser</from-outcome>
+        <to-activity-id>InvitiesHome</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <control-flow-rule id="__12">
+      <from-activity-id>createUser</from-activity-id>
+      <control-flow-case id="__13">
+        <from-outcome>backToHomeFromCreateUser</from-outcome>
+        <to-activity-id>InvitiesHome</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <use-page-fragments/>
+  </task-flow-definition>
+</adfc-config>

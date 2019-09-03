@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.2.1.9.14" id="contactInvitiesHomePageDef"
+                Package="view.pageDefs">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+    <iterator Binds="ContactInviteesVO1" RangeSize="25" DataControl="AppModuleDataControl"
+              id="ContactInviteesVO1Iterator"/>
+    <searchRegion Binds="ContactInviteesVO1Iterator" Criteria=""
+                  Customizer="oracle.jbo.uicli.binding.JUSearchBindingCustomizer" id="ContactInviteesVO1Query"/>
+    <iterator Binds="UserInviteesVO1" RangeSize="25" DataControl="AppModuleDataControl" id="UserInviteesVO1Iterator"/>
+    <searchRegion Binds="UserInviteesVO1Iterator" Criteria=""
+                  Customizer="oracle.jbo.uicli.binding.JUSearchBindingCustomizer" id="UserInviteesVO1Query"/>
+  </executables>
+  <bindings>
+    <tree IterBinding="ContactInviteesVO1Iterator" id="ContactInviteesVO1">
+      <nodeDefinition DefName="model.view.ContactInviteesVO" Name="ContactInviteesVO10">
+        <AttrNames>
+          <Item Value="AppointmentId"/>
+          <Item Value="ContactId"/>
+        </AttrNames>
+      </nodeDefinition>
+    </tree>
+    <action IterBinding="ContactInviteesVO1Iterator" id="CreateInsert1" RequiresUpdateModel="true"
+            Action="createInsertRow"/>
+    <action IterBinding="ContactInviteesVO1Iterator" id="Delete1" RequiresUpdateModel="false"
+            Action="removeCurrentRow"/>
+    <tree IterBinding="UserInviteesVO1Iterator" id="UserInviteesVO1">
+      <nodeDefinition DefName="model.view.UserInviteesVO" Name="UserInviteesVO10">
+        <AttrNames>
+          <Item Value="AppointmentId"/>
+          <Item Value="UserId"/>
+        </AttrNames>
+      </nodeDefinition>
+    </tree>
+    <action IterBinding="UserInviteesVO1Iterator" id="CreateInsert" RequiresUpdateModel="true"
+            Action="createInsertRow"/>
+    <action IterBinding="UserInviteesVO1Iterator" id="Delete" RequiresUpdateModel="false" Action="removeCurrentRow"/>
+  </bindings>
+</pageDefinition>

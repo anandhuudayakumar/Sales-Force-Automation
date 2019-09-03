@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.2.1.9.14" id="SearchAccountAppointmentPageDef"
+                Package="view.pageDefs">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+    <iterator Binds="AppointmentVO3" RangeSize="25" DataControl="AppModuleDataControl" id="AppointmentVO3Iterator"/>
+    <searchRegion Criteria="AppointmentSearch" Customizer="oracle.jbo.uicli.binding.JUSearchBindingCustomizer"
+                  Binds="AppointmentVO3Iterator" id="AppointmentSearchQuery"/>
+  </executables>
+  <bindings>
+    <tree IterBinding="AppointmentVO3Iterator" id="AppointmentVO3">
+      <nodeDefinition DefName="model.view.AppointmentVO" Name="AppointmentVO30">
+        <AttrNames>
+          <Item Value="AppName"/>
+          <Item Value="AppDescription"/>
+          <Item Value="StartDate"/>
+          <Item Value="EndDate"/>
+          <Item Value="Location"/>
+          <Item Value="AccountId"/>
+          <Item Value="OppurtunityId"/>
+          <Item Value="ContactId"/>
+        </AttrNames>
+      </nodeDefinition>
+    </tree>
+    <action IterBinding="AppointmentVO3Iterator" id="CreateInsert" RequiresUpdateModel="true" Action="createInsertRow"/>
+  </bindings>
+</pageDefinition>

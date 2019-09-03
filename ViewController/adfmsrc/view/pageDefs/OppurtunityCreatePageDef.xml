@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.2.1.9.14" id="OppurtunityCreatePageDef"
+                Package="view.pageDefs">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+    <iterator Binds="OpportunitiesVO1" RangeSize="25" DataControl="AppModuleDataControl" id="OpportunitiesVO1Iterator"/>
+    <searchRegion Criteria="Opportunities" Customizer="oracle.jbo.uicli.binding.JUSearchBindingCustomizer"
+                  Binds="OpportunitiesVO1Iterator" id="OpportunitiesVOCriteriaQuery"/>
+  </executables>
+  <bindings>
+    <tree IterBinding="OpportunitiesVO1Iterator" id="OpportunitiesVO1">
+      <nodeDefinition DefName="model.view.OpportunitiesVO" Name="OpportunitiesVO10">
+        <AttrNames>
+          <Item Value="OppName"/>
+          <Item Value="WinProb"/>
+          <Item Value="CloseDate"/>
+          <Item Value="PrimaryContact"/>
+          <Item Value="SalesStage"/>
+          <Item Value="SalesMeathod"/>
+          <Item Value="SalesChannel"/>
+          <Item Value="Budgeted"/>
+          <Item Value="BudgetAmount"/>
+          <Item Value="EstimatedDuration"/>
+          <Item Value="RiskLevel"/>
+          <Item Value="DecisionLevel"/>
+          <Item Value="OppDocument"/>
+          <Item Value="Accountid"/>
+        </AttrNames>
+      </nodeDefinition>
+    </tree>
+  </bindings>
+</pageDefinition>

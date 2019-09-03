@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ui:composition xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:af="http://xmlns.oracle.com/adf/faces/rich"
+                xmlns:f="http://java.sun.com/jsf/core">
+  <af:panelGroupLayout layout="vertical" id="pgl1">
+    <af:panelHeader text="Interaction" id="ph1">
+      <af:button actionListener="#{bindings.CreateInsert.execute}" text="Create"
+                 disabled="#{!bindings.CreateInsert.enabled}" id="b1" action="create"/>
+      <af:button text="back" id="b2" action="back"/>
+      <af:query id="qryId1" headerText="Search" disclosed="true"
+                value="#{bindings.InteractionVOCriteriaQuery.queryDescriptor}"
+                model="#{bindings.InteractionVOCriteriaQuery.queryModel}"
+                queryListener="#{bindings.InteractionVOCriteriaQuery.processQuery}"
+                queryOperationListener="#{bindings.InteractionVOCriteriaQuery.processQueryOperation}"
+                resultComponentId="::resId1"/>
+    </af:panelHeader>
+    <af:table value="#{bindings.InteractionVO3.collectionModel}" var="row" rows="#{bindings.InteractionVO3.rangeSize}"
+              emptyText="#{bindings.InteractionVO3.viewable ? 'No data to display.' : 'Access Denied.'}"
+              rowBandingInterval="0" selectedRowKeys="#{bindings.InteractionVO3.collectionModel.selectedRow}"
+              selectionListener="#{bindings.InteractionVO3.collectionModel.makeCurrent}" rowSelection="single"
+              fetchSize="#{bindings.InteractionVO3.rangeSize}"
+              filterModel="#{bindings.InteractionVOCriteriaQuery.queryDescriptor}" filterVisible="true"
+              queryListener="#{bindings.InteractionVOCriteriaQuery.processQuery}" varStatus="vs" id="resId1"
+              partialTriggers="::b1">
+      <af:column sortProperty="#{bindings.InteractionVO3.hints.InteractionName.name}" filterable="true" sortable="true"
+                 headerText="#{bindings.InteractionVO3.hints.InteractionName.label}" id="resId1c1">
+        <af:link shortDesc="#{bindings.InteractionVO3.hints.InteractionName.tooltip}" id="ot1"
+                 text="#{row.InteractionName}" action="edit"/>
+      </af:column>
+      <af:column sortProperty="#{bindings.InteractionVO3.hints.InteractionType.name}" filterable="true" sortable="true"
+                 headerText="#{bindings.InteractionVO3.hints.InteractionType.label}" id="resId1c2">
+        <af:outputText value="#{row.InteractionType}"
+                       shortDesc="#{bindings.InteractionVO3.hints.InteractionType.tooltip}" id="ot2"/>
+      </af:column>
+      <af:column sortProperty="#{bindings.InteractionVO3.hints.StartDatetime.name}" filterable="true" sortable="true"
+                 headerText="#{bindings.InteractionVO3.hints.StartDatetime.label}" id="resId1c3">
+        <f:facet name="filter">
+          <af:inputDate value="#{bindings.InteractionVOCriteriaQuery.queryDescriptor.filterConjunctionCriterion.criterionMap.StartDatetime.value}"
+                        id="id1">
+            <af:convertDateTime pattern="#{bindings.InteractionVO3.hints.StartDatetime.format}"/>
+          </af:inputDate>
+        </f:facet>
+        <af:outputText value="#{row.StartDatetime}" shortDesc="#{bindings.InteractionVO3.hints.StartDatetime.tooltip}"
+                       id="ot3">
+          <af:convertDateTime pattern="#{bindings.InteractionVO3.hints.StartDatetime.format}"/>
+        </af:outputText>
+      </af:column>
+      <af:column sortProperty="#{bindings.InteractionVO3.hints.Enddatetime.name}" filterable="true" sortable="true"
+                 headerText="#{bindings.InteractionVO3.hints.Enddatetime.label}" id="resId1c4">
+        <f:facet name="filter">
+          <af:inputDate value="#{bindings.InteractionVOCriteriaQuery.queryDescriptor.filterConjunctionCriterion.criterionMap.Enddatetime.value}"
+                        id="id2">
+            <af:convertDateTime pattern="#{bindings.InteractionVO3.hints.Enddatetime.format}"/>
+          </af:inputDate>
+        </f:facet>
+        <af:outputText value="#{row.Enddatetime}" shortDesc="#{bindings.InteractionVO3.hints.Enddatetime.tooltip}"
+                       id="ot4">
+          <af:convertDateTime pattern="#{bindings.InteractionVO3.hints.Enddatetime.format}"/>
+        </af:outputText>
+      </af:column>
+      <af:column sortProperty="#{bindings.InteractionVO3.hints.Resolution.name}" filterable="true" sortable="true"
+                 headerText="#{bindings.InteractionVO3.hints.Resolution.label}" id="resId1c5">
+        <af:outputText value="#{row.Resolution}" shortDesc="#{bindings.InteractionVO3.hints.Resolution.tooltip}"
+                       id="ot5"/>
+      </af:column>
+    </af:table>
+  </af:panelGroupLayout>
+</ui:composition>

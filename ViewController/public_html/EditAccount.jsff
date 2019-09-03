@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ui:composition xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+  <af:panelFormLayout id="pfl1">
+    <af:inputText value="#{bindings.AccountName.inputValue}" label="#{bindings.AccountName.hints.label}"
+                  required="#{bindings.AccountName.hints.mandatory}"
+                  columns="#{bindings.AccountName.hints.displayWidth}"
+                  maximumLength="#{bindings.AccountName.hints.precision}"
+                  shortDesc="#{bindings.AccountName.hints.tooltip}" id="it1">
+      <f:validator binding="#{bindings.AccountName.validator}"/>
+    </af:inputText>
+    <af:inputText value="#{bindings.AddressLine1.inputValue}" label="#{bindings.AddressLine1.hints.label}"
+                  required="#{bindings.AddressLine1.hints.mandatory}"
+                  columns="#{bindings.AddressLine1.hints.displayWidth}"
+                  maximumLength="#{bindings.AddressLine1.hints.precision}"
+                  shortDesc="#{bindings.AddressLine1.hints.tooltip}" id="it2">
+      <f:validator binding="#{bindings.AddressLine1.validator}"/>
+    </af:inputText>
+    <af:inputText value="#{bindings.AddressLine2.inputValue}" label="#{bindings.AddressLine2.hints.label}"
+                  required="#{bindings.AddressLine2.hints.mandatory}"
+                  columns="#{bindings.AddressLine2.hints.displayWidth}"
+                  maximumLength="#{bindings.AddressLine2.hints.precision}"
+                  shortDesc="#{bindings.AddressLine2.hints.tooltip}" id="it3">
+      <f:validator binding="#{bindings.AddressLine2.validator}"/>
+    </af:inputText>
+    <af:inputText value="#{bindings.AddressLine3.inputValue}" label="#{bindings.AddressLine3.hints.label}"
+                  required="#{bindings.AddressLine3.hints.mandatory}"
+                  columns="#{bindings.AddressLine3.hints.displayWidth}"
+                  maximumLength="#{bindings.AddressLine3.hints.precision}"
+                  shortDesc="#{bindings.AddressLine3.hints.tooltip}" id="it4">
+      <f:validator binding="#{bindings.AddressLine3.validator}"/>
+    </af:inputText>
+    <af:inputText value="#{bindings.AccountUrl.inputValue}" label="#{bindings.AccountUrl.hints.label}"
+                  required="#{bindings.AccountUrl.hints.mandatory}" columns="#{bindings.AccountUrl.hints.displayWidth}"
+                  maximumLength="#{bindings.AccountUrl.hints.precision}"
+                  shortDesc="#{bindings.AccountUrl.hints.tooltip}" id="it5">
+      <f:validator binding="#{bindings.AccountUrl.validator}"/>
+    </af:inputText>
+    <af:inputComboboxListOfValues id="parentAccountId"
+                                  popupTitle="Search and Select: #{bindings.ParentAccount.hints.label}"
+                                  value="#{bindings.ParentAccount.inputValue}"
+                                  label="#{bindings.ParentAccount.hints.label}"
+                                  model="#{bindings.ParentAccount.listOfValuesModel}"
+                                  required="#{bindings.ParentAccount.hints.mandatory}"
+                                  columns="#{bindings.ParentAccount.hints.displayWidth}"
+                                  shortDesc="#{bindings.ParentAccount.hints.tooltip}">
+      <f:validator binding="#{bindings.ParentAccount.validator}"/>
+      <af:convertNumber groupingUsed="false" pattern="#{bindings.ParentAccount.format}"/>
+    </af:inputComboboxListOfValues>
+    <af:inputText value="#{bindings.Ceo.inputValue}" label="#{bindings.Ceo.hints.label}"
+                  required="#{bindings.Ceo.hints.mandatory}" columns="#{bindings.Ceo.hints.displayWidth}"
+                  maximumLength="#{bindings.Ceo.hints.precision}" shortDesc="#{bindings.Ceo.hints.tooltip}" id="it6">
+      <f:validator binding="#{bindings.Ceo.validator}"/>
+    </af:inputText>
+    <af:inputText value="#{bindings.NoOfEmployees.inputValue}" label="#{bindings.NoOfEmployees.hints.label}"
+                  required="#{bindings.NoOfEmployees.hints.mandatory}"
+                  columns="#{bindings.NoOfEmployees.hints.displayWidth}"
+                  maximumLength="#{bindings.NoOfEmployees.hints.precision}"
+                  shortDesc="#{bindings.NoOfEmployees.hints.tooltip}" id="it7">
+      <f:validator binding="#{bindings.NoOfEmployees.validator}"/>
+      <af:convertNumber groupingUsed="false" pattern="#{bindings.NoOfEmployees.format}"/>
+    </af:inputText>
+    <af:inputText value="#{bindings.Email.inputValue}" label="#{bindings.Email.hints.label}"
+                  required="#{bindings.Email.hints.mandatory}" columns="#{bindings.Email.hints.displayWidth}"
+                  maximumLength="#{bindings.Email.hints.precision}" shortDesc="#{bindings.Email.hints.tooltip}"
+                  id="it8">
+      <f:validator binding="#{bindings.Email.validator}"/>
+    </af:inputText>
+    <af:selectOneChoice value="#{bindings.PrimaryContact.inputValue}" label="#{bindings.PrimaryContact.label}"
+                        required="#{bindings.PrimaryContact.hints.mandatory}"
+                        shortDesc="#{bindings.PrimaryContact.hints.tooltip}" id="soc1">
+      <f:selectItems value="#{bindings.PrimaryContact.items}" id="si1"/>
+      <f:validator binding="#{bindings.PrimaryContact.validator}"/>
+    </af:selectOneChoice>
+    <f:facet name="footer">
+      <af:button text="Submit" id="b1"/>
+      <af:button actionListener="#{bindings.Commit.execute}" text="Save" disabled="#{!bindings.Commit.enabled}"
+                 id="b2" action="back"/>
+      <af:button actionListener="#{bindings.Rollback.execute}" text="Rollback" disabled="#{!bindings.Rollback.enabled}"
+                 immediate="true" id="b3">
+        <af:resetActionListener/>
+      </af:button>
+      <af:link text="Appointments" id="l1" action="appointment"/>
+      <af:link text="contacts" id="l2" action="contact"/>
+      <af:link text="Task" id="l3" action="task"/>
+      <af:link text="Oppurtunities" id="l4" action="oppurtunity"/>
+    </f:facet>
+  </af:panelFormLayout>
+</ui:composition>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<adfc-config xmlns="http://xmlns.oracle.com/adf/controller" version="1.2">
+  <task-flow-definition id="AccountTask">
+    <default-activity>searchtaskacc</default-activity>
+    <data-control-scope>
+      <shared/>
+    </data-control-scope>
+    <view id="searchtaskacc">
+      <page>/searchtaskacc.jsff</page>
+    </view>
+    <view id="createtaskacc">
+      <page>/createtaskacc.jsff</page>
+    </view>
+    <view id="edittaskacc">
+      <page>/edittaskacc.jsff</page>
+    </view>
+    <task-flow-return id="return">
+      <outcome>
+        <name>return</name>
+      </outcome>
+    </task-flow-return>
+    <control-flow-rule id="__1">
+      <from-activity-id>searchtaskacc</from-activity-id>
+      <control-flow-case id="__2">
+        <from-outcome>createtask</from-outcome>
+        <to-activity-id>createtaskacc</to-activity-id>
+      </control-flow-case>
+      <control-flow-case id="__3">
+        <from-outcome>edittask</from-outcome>
+        <to-activity-id>edittaskacc</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <control-flow-rule id="__4">
+      <from-activity-id>createtaskacc</from-activity-id>
+      <control-flow-case id="__5">
+        <from-outcome>back</from-outcome>
+        <to-activity-id>searchtaskacc</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <control-flow-rule id="__6">
+      <from-activity-id>edittaskacc</from-activity-id>
+      <control-flow-case id="__7">
+        <from-outcome>back</from-outcome>
+        <to-activity-id>searchtaskacc</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <control-flow-rule id="__8">
+      <from-activity-id>*</from-activity-id>
+      <control-flow-case id="__9">
+        <from-outcome>backtoaccount</from-outcome>
+        <to-activity-id>return</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <use-page-fragments/>
+  </task-flow-definition>
+</adfc-config>

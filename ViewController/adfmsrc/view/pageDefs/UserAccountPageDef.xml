@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.2.1.9.14" id="UserAccountPageDef"
+                Package="view.pageDefs">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+    <iterator Binds="UserAccountsVO1" RangeSize="25" DataControl="AppModuleDataControl" id="UserAccountsVO1Iterator"/>
+    <searchRegion Criteria="UserAccountsVOCriteria" Customizer="oracle.jbo.uicli.binding.JUSearchBindingCustomizer"
+                  Binds="UserAccountsVO1Iterator" id="UserAccountsVOCriteriaQuery"/>
+  </executables>
+  <bindings>
+    <tree IterBinding="UserAccountsVO1Iterator" id="UserAccountsVO1">
+      <nodeDefinition DefName="model.view.UserAccountsVO" Name="UserAccountsVO10">
+        <AttrNames>
+          <Item Value="UserName"/>
+          <Item Value="UserEmployeeId"/>
+          <Item Value="FirstName"/>
+          <Item Value="MiddleName"/>
+          <Item Value="LastName"/>
+          <Item Value="Password"/>
+          <Item Value="StartDate"/>
+          <Item Value="EndDate"/>
+        </AttrNames>
+      </nodeDefinition>
+    </tree>
+    <action IterBinding="UserAccountsVO1Iterator" id="CreateInsert" RequiresUpdateModel="true"
+            Action="createInsertRow"/>
+  </bindings>
+</pageDefinition>

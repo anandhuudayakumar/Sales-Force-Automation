@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ui:composition xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:af="http://xmlns.oracle.com/adf/faces/rich"
+                xmlns:f="http://java.sun.com/jsf/core">
+  <af:panelGroupLayout layout="vertical" id="pgl1">
+    <af:panelHeader text="UserAccounts" id="ph1">
+      <af:query id="qryId1" headerText="Search" disclosed="true"
+                value="#{bindings.UserAccountsVOCriteriaQuery.queryDescriptor}"
+                model="#{bindings.UserAccountsVOCriteriaQuery.queryModel}"
+                queryListener="#{bindings.UserAccountsVOCriteriaQuery.processQuery}"
+                queryOperationListener="#{bindings.UserAccountsVOCriteriaQuery.processQueryOperation}"
+                resultComponentId="::resId1"/>
+    </af:panelHeader>
+    <af:table value="#{bindings.UserAccountsVO1.collectionModel}" var="row" rows="#{bindings.UserAccountsVO1.rangeSize}"
+              emptyText="#{bindings.UserAccountsVO1.viewable ? 'No data to display.' : 'Access Denied.'}"
+              rowBandingInterval="0" selectedRowKeys="#{bindings.UserAccountsVO1.collectionModel.selectedRow}"
+              selectionListener="#{bindings.UserAccountsVO1.collectionModel.makeCurrent}" rowSelection="single"
+              fetchSize="#{bindings.UserAccountsVO1.rangeSize}"
+              filterModel="#{bindings.UserAccountsVOCriteriaQuery.queryDescriptor}" filterVisible="true"
+              queryListener="#{bindings.UserAccountsVOCriteriaQuery.processQuery}" varStatus="vs" id="resId1"
+              partialTriggers="::b1">
+      <af:column sortProperty="#{bindings.UserAccountsVO1.hints.UserName.name}" filterable="true" sortable="true"
+                 headerText="#{bindings.UserAccountsVO1.hints.UserName.label}" id="resId1c1">
+        <af:link shortDesc="#{bindings.UserAccountsVO1.hints.UserName.tooltip}" id="ot1" text="#{row.UserName}"
+                 action="userEdit"/>
+      </af:column>
+      <af:column sortProperty="#{bindings.UserAccountsVO1.hints.UserEmployeeId.name}" filterable="true" sortable="true"
+                 headerText="#{bindings.UserAccountsVO1.hints.UserEmployeeId.label}" id="resId1c2">
+        <af:outputText value="#{row.UserEmployeeId}"
+                       shortDesc="#{bindings.UserAccountsVO1.hints.UserEmployeeId.tooltip}" id="ot2">
+          <af:convertNumber groupingUsed="false" pattern="#{bindings.UserAccountsVO1.hints.UserEmployeeId.format}"/>
+        </af:outputText>
+      </af:column>
+      <af:column sortProperty="#{bindings.UserAccountsVO1.hints.FirstName.name}" filterable="true" sortable="true"
+                 headerText="#{bindings.UserAccountsVO1.hints.FirstName.label}" id="resId1c3">
+        <af:outputText value="#{row.FirstName}" shortDesc="#{bindings.UserAccountsVO1.hints.FirstName.tooltip}"
+                       id="ot3"/>
+      </af:column>
+      <af:column sortProperty="#{bindings.UserAccountsVO1.hints.MiddleName.name}" filterable="true" sortable="true"
+                 headerText="#{bindings.UserAccountsVO1.hints.MiddleName.label}" id="resId1c4">
+        <af:outputText value="#{row.MiddleName}" shortDesc="#{bindings.UserAccountsVO1.hints.MiddleName.tooltip}"
+                       id="ot4"/>
+      </af:column>
+      <af:column sortProperty="#{bindings.UserAccountsVO1.hints.LastName.name}" filterable="true" sortable="true"
+                 headerText="#{bindings.UserAccountsVO1.hints.LastName.label}" id="resId1c5">
+        <af:outputText value="#{row.LastName}" shortDesc="#{bindings.UserAccountsVO1.hints.LastName.tooltip}" id="ot5"/>
+      </af:column>
+      <af:column sortProperty="#{bindings.UserAccountsVO1.hints.Password.name}" filterable="true" sortable="true"
+                 headerText="#{bindings.UserAccountsVO1.hints.Password.label}" id="resId1c6">
+        <af:outputText value="#{row.Password}" shortDesc="#{bindings.UserAccountsVO1.hints.Password.tooltip}" id="ot6"/>
+      </af:column>
+      <af:column sortProperty="#{bindings.UserAccountsVO1.hints.StartDate.name}" filterable="true" sortable="true"
+                 headerText="#{bindings.UserAccountsVO1.hints.StartDate.label}" id="resId1c7">
+        <f:facet name="filter">
+          <af:inputDate value="#{bindings.UserAccountsVOCriteriaQuery.queryDescriptor.filterConjunctionCriterion.criterionMap.StartDate.value}"
+                        id="id1">
+            <af:convertDateTime pattern="#{bindings.UserAccountsVO1.hints.StartDate.format}"/>
+          </af:inputDate>
+        </f:facet>
+        <af:outputText value="#{row.StartDate}" shortDesc="#{bindings.UserAccountsVO1.hints.StartDate.tooltip}"
+                       id="ot7">
+          <af:convertDateTime pattern="#{bindings.UserAccountsVO1.hints.StartDate.format}"/>
+        </af:outputText>
+      </af:column>
+      <af:column sortProperty="#{bindings.UserAccountsVO1.hints.EndDate.name}" filterable="true" sortable="true"
+                 headerText="#{bindings.UserAccountsVO1.hints.EndDate.label}" id="resId1c8">
+        <f:facet name="filter">
+          <af:inputDate value="#{bindings.UserAccountsVOCriteriaQuery.queryDescriptor.filterConjunctionCriterion.criterionMap.EndDate.value}"
+                        id="id2">
+            <af:convertDateTime pattern="#{bindings.UserAccountsVO1.hints.EndDate.format}"/>
+          </af:inputDate>
+        </f:facet>
+        <af:outputText value="#{row.EndDate}" shortDesc="#{bindings.UserAccountsVO1.hints.EndDate.tooltip}" id="ot8">
+          <af:convertDateTime pattern="#{bindings.UserAccountsVO1.hints.EndDate.format}"/>
+        </af:outputText>
+      </af:column>
+    </af:table>
+    <af:button text="Back" id="b2" action="home"/>
+    <af:button text="Create" id="b1" actionListener="#{bindings.CreateInsert.execute}"
+               disabled="#{!bindings.CreateInsert.enabled}" action="userEdit"/>
+  </af:panelGroupLayout>
+</ui:composition>

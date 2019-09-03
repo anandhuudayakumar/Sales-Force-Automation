@@ -1,0 +1,235 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ui:composition xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:af="http://xmlns.oracle.com/adf/faces/rich"
+                xmlns:f="http://java.sun.com/jsf/core">
+  <af:panelGridLayout id="pgl1">
+    <af:gridRow marginTop="5px" height="auto" marginBottom="5px" id="gr1">
+      <af:gridCell marginStart="5px" width="34%" id="gc1" halign="stretch">
+        <af:panelBox text="User Account" id="pb1">
+          <f:facet name="toolbar"/>
+          <af:table value="#{bindings.UserAccountsVO1.collectionModel}" var="row"
+                    rows="#{bindings.UserAccountsVO1.rangeSize}"
+                    emptyText="#{bindings.UserAccountsVO1.viewable ? 'No data to display.' : 'Access Denied.'}"
+                    rowBandingInterval="0" selectedRowKeys="#{bindings.UserAccountsVO1.collectionModel.selectedRow}"
+                    selectionListener="#{bindings.UserAccountsVO1.collectionModel.makeCurrent}" rowSelection="single"
+                    fetchSize="#{bindings.UserAccountsVO1.rangeSize}"
+                    filterModel="#{bindings.UserAccountsVO1Query.queryDescriptor}" filterVisible="true"
+                    queryListener="#{bindings.UserAccountsVO1Query.processQuery}" varStatus="vs" id="t1">
+            <af:column sortProperty="#{bindings.UserAccountsVO1.hints.UserName.name}" filterable="true" sortable="true"
+                       headerText="#{bindings.UserAccountsVO1.hints.UserName.label}" id="c1">
+              <af:inputText value="#{row.bindings.UserName.inputValue}"
+                            label="#{bindings.UserAccountsVO1.hints.UserName.label}"
+                            required="#{bindings.UserAccountsVO1.hints.UserName.mandatory}"
+                            columns="#{bindings.UserAccountsVO1.hints.UserName.displayWidth}"
+                            maximumLength="#{bindings.UserAccountsVO1.hints.UserName.precision}"
+                            shortDesc="#{bindings.UserAccountsVO1.hints.UserName.tooltip}" id="it1">
+                <f:validator binding="#{row.bindings.UserName.validator}"/>
+              </af:inputText>
+            </af:column>
+            <af:column sortProperty="#{bindings.UserAccountsVO1.hints.FirstName.name}" filterable="true" sortable="true"
+                       headerText="#{bindings.UserAccountsVO1.hints.FirstName.label}" id="c2">
+              <af:inputText value="#{row.bindings.FirstName.inputValue}"
+                            label="#{bindings.UserAccountsVO1.hints.FirstName.label}"
+                            required="#{bindings.UserAccountsVO1.hints.FirstName.mandatory}"
+                            columns="#{bindings.UserAccountsVO1.hints.FirstName.displayWidth}"
+                            maximumLength="#{bindings.UserAccountsVO1.hints.FirstName.precision}"
+                            shortDesc="#{bindings.UserAccountsVO1.hints.FirstName.tooltip}" id="it2">
+                <f:validator binding="#{row.bindings.FirstName.validator}"/>
+              </af:inputText>
+            </af:column>
+            <af:column sortProperty="#{bindings.UserAccountsVO1.hints.MiddleName.name}" filterable="true"
+                       sortable="true" headerText="#{bindings.UserAccountsVO1.hints.MiddleName.label}" id="c3">
+              <af:inputText value="#{row.bindings.MiddleName.inputValue}"
+                            label="#{bindings.UserAccountsVO1.hints.MiddleName.label}"
+                            required="#{bindings.UserAccountsVO1.hints.MiddleName.mandatory}"
+                            columns="#{bindings.UserAccountsVO1.hints.MiddleName.displayWidth}"
+                            maximumLength="#{bindings.UserAccountsVO1.hints.MiddleName.precision}"
+                            shortDesc="#{bindings.UserAccountsVO1.hints.MiddleName.tooltip}" id="it3">
+                <f:validator binding="#{row.bindings.MiddleName.validator}"/>
+              </af:inputText>
+            </af:column>
+            <af:column sortProperty="#{bindings.UserAccountsVO1.hints.LastName.name}" filterable="true" sortable="true"
+                       headerText="#{bindings.UserAccountsVO1.hints.LastName.label}" id="c4">
+              <af:inputText value="#{row.bindings.LastName.inputValue}"
+                            label="#{bindings.UserAccountsVO1.hints.LastName.label}"
+                            required="#{bindings.UserAccountsVO1.hints.LastName.mandatory}"
+                            columns="#{bindings.UserAccountsVO1.hints.LastName.displayWidth}"
+                            maximumLength="#{bindings.UserAccountsVO1.hints.LastName.precision}"
+                            shortDesc="#{bindings.UserAccountsVO1.hints.LastName.tooltip}" id="it4">
+                <f:validator binding="#{row.bindings.LastName.validator}"/>
+              </af:inputText>
+            </af:column>
+            <af:column sortProperty="#{bindings.UserAccountsVO1.hints.StartDate.name}" filterable="true" sortable="true"
+                       headerText="#{bindings.UserAccountsVO1.hints.StartDate.label}" id="c5">
+              <f:facet name="filter">
+                <af:inputDate value="#{bindings.UserAccountsVO1Query.queryDescriptor.filterConjunctionCriterion.criterionMap.StartDate.value}"
+                              id="id1">
+                  <af:convertDateTime pattern="#{bindings.UserAccountsVO1.hints.StartDate.format}"/>
+                </af:inputDate>
+              </f:facet>
+              <af:inputDate value="#{row.bindings.StartDate.inputValue}"
+                            label="#{bindings.UserAccountsVO1.hints.StartDate.label}"
+                            required="#{bindings.UserAccountsVO1.hints.StartDate.mandatory}"
+                            columns="#{bindings.UserAccountsVO1.hints.StartDate.displayWidth}"
+                            shortDesc="#{bindings.UserAccountsVO1.hints.StartDate.tooltip}" id="id2">
+                <f:validator binding="#{row.bindings.StartDate.validator}"/>
+                <af:convertDateTime pattern="#{bindings.UserAccountsVO1.hints.StartDate.format}"/>
+              </af:inputDate>
+            </af:column>
+            <af:column sortProperty="#{bindings.UserAccountsVO1.hints.EndDate.name}" filterable="true" sortable="true"
+                       headerText="#{bindings.UserAccountsVO1.hints.EndDate.label}" id="c6">
+              <f:facet name="filter">
+                <af:inputDate value="#{bindings.UserAccountsVO1Query.queryDescriptor.filterConjunctionCriterion.criterionMap.EndDate.value}"
+                              id="id3">
+                  <af:convertDateTime pattern="#{bindings.UserAccountsVO1.hints.EndDate.format}"/>
+                </af:inputDate>
+              </f:facet>
+              <af:inputDate value="#{row.bindings.EndDate.inputValue}"
+                            label="#{bindings.UserAccountsVO1.hints.EndDate.label}"
+                            required="#{bindings.UserAccountsVO1.hints.EndDate.mandatory}"
+                            columns="#{bindings.UserAccountsVO1.hints.EndDate.displayWidth}"
+                            shortDesc="#{bindings.UserAccountsVO1.hints.EndDate.tooltip}" id="id4">
+                <f:validator binding="#{row.bindings.EndDate.validator}"/>
+                <af:convertDateTime pattern="#{bindings.UserAccountsVO1.hints.EndDate.format}"/>
+              </af:inputDate>
+            </af:column>
+          </af:table>
+        </af:panelBox>
+      </af:gridCell>
+      <af:gridCell marginStart="5px" width="33%" id="gc2" halign="stretch">
+        <af:panelBox text="Roles" id="pb2">
+          <f:facet name="toolbar"/>
+          <af:table value="#{bindings.RolesVO1.collectionModel}" var="row" rows="#{bindings.RolesVO1.rangeSize}"
+                    emptyText="#{bindings.RolesVO1.viewable ? 'No data to display.' : 'Access Denied.'}"
+                    rowBandingInterval="0" selectedRowKeys="#{bindings.RolesVO1.collectionModel.selectedRow}"
+                    selectionListener="#{bindings.RolesVO1.collectionModel.makeCurrent}" rowSelection="single"
+                    fetchSize="#{bindings.RolesVO1.rangeSize}" filterModel="#{bindings.RolesVO1Query.queryDescriptor}"
+                    filterVisible="true" queryListener="#{bindings.RolesVO1Query.processQuery}" varStatus="vs" id="t2">
+            <af:column sortProperty="#{bindings.RolesVO1.hints.RoleName.name}" filterable="true" sortable="true"
+                       headerText="#{bindings.RolesVO1.hints.RoleName.label}" id="c7">
+              <af:inputText value="#{row.bindings.RoleName.inputValue}"
+                            label="#{bindings.RolesVO1.hints.RoleName.label}"
+                            required="#{bindings.RolesVO1.hints.RoleName.mandatory}"
+                            columns="#{bindings.RolesVO1.hints.RoleName.displayWidth}"
+                            maximumLength="#{bindings.RolesVO1.hints.RoleName.precision}"
+                            shortDesc="#{bindings.RolesVO1.hints.RoleName.tooltip}" id="it5">
+                <f:validator binding="#{row.bindings.RoleName.validator}"/>
+              </af:inputText>
+            </af:column>
+            <af:column sortProperty="#{bindings.RolesVO1.hints.RoleDescription.name}" filterable="true" sortable="true"
+                       headerText="#{bindings.RolesVO1.hints.RoleDescription.label}" id="c8">
+              <af:inputText value="#{row.bindings.RoleDescription.inputValue}"
+                            label="#{bindings.RolesVO1.hints.RoleDescription.label}"
+                            required="#{bindings.RolesVO1.hints.RoleDescription.mandatory}"
+                            columns="#{bindings.RolesVO1.hints.RoleDescription.displayWidth}"
+                            maximumLength="#{bindings.RolesVO1.hints.RoleDescription.precision}"
+                            shortDesc="#{bindings.RolesVO1.hints.RoleDescription.tooltip}" id="it6">
+                <f:validator binding="#{row.bindings.RoleDescription.validator}"/>
+              </af:inputText>
+            </af:column>
+            <af:column sortProperty="#{bindings.RolesVO1.hints.RoleStartDate.name}" filterable="true" sortable="true"
+                       headerText="#{bindings.RolesVO1.hints.RoleStartDate.label}" id="c9">
+              <f:facet name="filter">
+                <af:inputDate value="#{bindings.RolesVO1Query.queryDescriptor.filterConjunctionCriterion.criterionMap.RoleStartDate.value}"
+                              id="id5">
+                  <af:convertDateTime pattern="#{bindings.RolesVO1.hints.RoleStartDate.format}"/>
+                </af:inputDate>
+              </f:facet>
+              <af:inputDate value="#{row.bindings.RoleStartDate.inputValue}"
+                            label="#{bindings.RolesVO1.hints.RoleStartDate.label}"
+                            required="#{bindings.RolesVO1.hints.RoleStartDate.mandatory}"
+                            columns="#{bindings.RolesVO1.hints.RoleStartDate.displayWidth}"
+                            shortDesc="#{bindings.RolesVO1.hints.RoleStartDate.tooltip}" id="id6">
+                <f:validator binding="#{row.bindings.RoleStartDate.validator}"/>
+                <af:convertDateTime pattern="#{bindings.RolesVO1.hints.RoleStartDate.format}"/>
+              </af:inputDate>
+            </af:column>
+            <af:column sortProperty="#{bindings.RolesVO1.hints.RoleEndDate.name}" filterable="true" sortable="true"
+                       headerText="#{bindings.RolesVO1.hints.RoleEndDate.label}" id="c10">
+              <f:facet name="filter">
+                <af:inputDate value="#{bindings.RolesVO1Query.queryDescriptor.filterConjunctionCriterion.criterionMap.RoleEndDate.value}"
+                              id="id7">
+                  <af:convertDateTime pattern="#{bindings.RolesVO1.hints.RoleEndDate.format}"/>
+                </af:inputDate>
+              </f:facet>
+              <af:inputDate value="#{row.bindings.RoleEndDate.inputValue}"
+                            label="#{bindings.RolesVO1.hints.RoleEndDate.label}"
+                            required="#{bindings.RolesVO1.hints.RoleEndDate.mandatory}"
+                            columns="#{bindings.RolesVO1.hints.RoleEndDate.displayWidth}"
+                            shortDesc="#{bindings.RolesVO1.hints.RoleEndDate.tooltip}" id="id8">
+                <f:validator binding="#{row.bindings.RoleEndDate.validator}"/>
+                <af:convertDateTime pattern="#{bindings.RolesVO1.hints.RoleEndDate.format}"/>
+              </af:inputDate>
+            </af:column>
+            <af:column sortProperty="#{bindings.RolesVO1.hints.CreatedDate.name}" filterable="true" sortable="true"
+                       headerText="#{bindings.RolesVO1.hints.CreatedDate.label}" id="c11">
+              <f:facet name="filter">
+                <af:inputDate value="#{bindings.RolesVO1Query.queryDescriptor.filterConjunctionCriterion.criterionMap.CreatedDate.value}"
+                              id="id9">
+                  <af:convertDateTime pattern="#{bindings.RolesVO1.hints.CreatedDate.format}"/>
+                </af:inputDate>
+              </f:facet>
+              <af:inputDate value="#{row.bindings.CreatedDate.inputValue}"
+                            label="#{bindings.RolesVO1.hints.CreatedDate.label}"
+                            required="#{bindings.RolesVO1.hints.CreatedDate.mandatory}"
+                            columns="#{bindings.RolesVO1.hints.CreatedDate.displayWidth}"
+                            shortDesc="#{bindings.RolesVO1.hints.CreatedDate.tooltip}" id="id10">
+                <f:validator binding="#{row.bindings.CreatedDate.validator}"/>
+                <af:convertDateTime pattern="#{bindings.RolesVO1.hints.CreatedDate.format}"/>
+              </af:inputDate>
+            </af:column>
+          </af:table>
+        </af:panelBox>
+      </af:gridCell>
+      <af:gridCell marginStart="5px" width="33%" marginEnd="5px" id="gc3" halign="stretch">
+        <af:panelBox text="Products" id="pb3">
+          <f:facet name="toolbar"/>
+          <af:table value="#{bindings.ProductCatalogVO1.collectionModel}" var="row"
+                    rows="#{bindings.ProductCatalogVO1.rangeSize}"
+                    emptyText="#{bindings.ProductCatalogVO1.viewable ? 'No data to display.' : 'Access Denied.'}"
+                    rowBandingInterval="0" selectedRowKeys="#{bindings.ProductCatalogVO1.collectionModel.selectedRow}"
+                    selectionListener="#{bindings.ProductCatalogVO1.collectionModel.makeCurrent}" rowSelection="single"
+                    fetchSize="#{bindings.ProductCatalogVO1.rangeSize}"
+                    filterModel="#{bindings.ProductCatalogVO1Query.queryDescriptor}" filterVisible="true"
+                    queryListener="#{bindings.ProductCatalogVO1Query.processQuery}" varStatus="vs" id="t3">
+            <af:column sortProperty="#{bindings.ProductCatalogVO1.hints.Productname.name}" filterable="true"
+                       sortable="true" headerText="#{bindings.ProductCatalogVO1.hints.Productname.label}" id="c12">
+              <af:inputText value="#{row.bindings.Productname.inputValue}"
+                            label="#{bindings.ProductCatalogVO1.hints.Productname.label}"
+                            required="#{bindings.ProductCatalogVO1.hints.Productname.mandatory}"
+                            columns="#{bindings.ProductCatalogVO1.hints.Productname.displayWidth}"
+                            maximumLength="#{bindings.ProductCatalogVO1.hints.Productname.precision}"
+                            shortDesc="#{bindings.ProductCatalogVO1.hints.Productname.tooltip}" id="it7">
+                <f:validator binding="#{row.bindings.Productname.validator}"/>
+              </af:inputText>
+            </af:column>
+            <af:column sortProperty="#{bindings.ProductCatalogVO1.hints.CurrentPrice.name}" filterable="true"
+                       sortable="true" headerText="#{bindings.ProductCatalogVO1.hints.CurrentPrice.label}" id="c13">
+              <af:inputText value="#{row.bindings.CurrentPrice.inputValue}"
+                            label="#{bindings.ProductCatalogVO1.hints.CurrentPrice.label}"
+                            required="#{bindings.ProductCatalogVO1.hints.CurrentPrice.mandatory}"
+                            columns="#{bindings.ProductCatalogVO1.hints.CurrentPrice.displayWidth}"
+                            maximumLength="#{bindings.ProductCatalogVO1.hints.CurrentPrice.precision}"
+                            shortDesc="#{bindings.ProductCatalogVO1.hints.CurrentPrice.tooltip}" id="it8">
+                <f:validator binding="#{row.bindings.CurrentPrice.validator}"/>
+                <af:convertNumber groupingUsed="false"
+                                  pattern="#{bindings.ProductCatalogVO1.hints.CurrentPrice.format}"/>
+              </af:inputText>
+            </af:column>
+            <af:column sortProperty="#{bindings.ProductCatalogVO1.hints.MinPrice.name}" filterable="true"
+                       sortable="true" headerText="#{bindings.ProductCatalogVO1.hints.MinPrice.label}" id="c14">
+              <af:inputText value="#{row.bindings.MinPrice.inputValue}"
+                            label="#{bindings.ProductCatalogVO1.hints.MinPrice.label}"
+                            required="#{bindings.ProductCatalogVO1.hints.MinPrice.mandatory}"
+                            columns="#{bindings.ProductCatalogVO1.hints.MinPrice.displayWidth}"
+                            maximumLength="#{bindings.ProductCatalogVO1.hints.MinPrice.precision}"
+                            shortDesc="#{bindings.ProductCatalogVO1.hints.MinPrice.tooltip}" id="it9">
+                <f:validator binding="#{row.bindings.MinPrice.validator}"/>
+                <af:convertNumber groupingUsed="false" pattern="#{bindings.ProductCatalogVO1.hints.MinPrice.format}"/>
+              </af:inputText>
+            </af:column>
+          </af:table>
+        </af:panelBox>
+      </af:gridCell>
+    </af:gridRow>
+  </af:panelGridLayout>
+</ui:composition>

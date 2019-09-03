@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1" xmlns:f="http://java.sun.com/jsf/core"
+          xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <f:view>
+        <af:document title="untitled1.jspx" id="d1">
+            <af:messages id="m1"/>
+            <af:form id="f1">
+                <af:panelGridLayout id="pgl1">
+                    <af:gridRow height="50px" id="gr1">
+                        <af:gridCell width="100px" halign="stretch" valign="stretch" rowSpan="2" id="gc2">
+                            <!-- Left -->
+                        </af:gridCell>
+                        <af:gridCell width="100%" halign="stretch" valign="stretch" id="gc3">
+                            <!-- Partial Header -->
+                            <af:outputText value="ORACLE SFA" id="ot1" inlineStyle="font-size:medium;"/>
+                            <af:navigationPane id="np1" inlineStyle="-align:text-bottom; font-size:xx-small;">
+                                <af:commandNavigationItem id="ni1" text="Home"/>
+                                <af:commandNavigationItem id="ni5" text="Oppurtunities"/>
+                                <af:commandNavigationItem id="ni3" text="Contacts"/>
+                                <af:commandNavigationItem id="ni4" text="Tasks"/>
+                                <af:commandNavigationItem id="ni6" text="Logout"/>
+                                <af:commandNavigationItem id="ni2" text="Customer Account" action="caccount"/>
+                                
+                            </af:navigationPane>
+                        </af:gridCell>
+                    </af:gridRow>
+                    <af:gridRow height="100%" id="gr2">
+                        <af:gridCell width="100%" halign="stretch" valign="stretch" id="gc1">
+                            <!-- Content -->
+                            <af:panelGroupLayout layout="vertical" id="pgl2">
+                                <af:panelHeader text="CustomerAccountEO" id="ph1">
+                                    <af:query id="qryId1" headerText="Search" disclosed="true"
+                                              value="#{bindings.CustomerAccountVOCriteriaQuery.queryDescriptor}"
+                                              model="#{bindings.CustomerAccountVOCriteriaQuery.queryModel}"
+                                              queryListener="#{bindings.CustomerAccountVOCriteriaQuery.processQuery}"
+                                              queryOperationListener="#{bindings.CustomerAccountVOCriteriaQuery.processQueryOperation}"
+                                              resultComponentId="::resId1"/>
+                                </af:panelHeader>
+                                <af:table value="#{bindings.CustomerAccountVO1.collectionModel}" var="row"
+                                          rows="#{bindings.CustomerAccountVO1.rangeSize}"
+                                          emptyText="#{bindings.CustomerAccountVO1.viewable ? 'No data to display.' : 'Access Denied.'}"
+                                          rowBandingInterval="0"
+                                          selectedRowKeys="#{bindings.CustomerAccountVO1.collectionModel.selectedRow}"
+                                          selectionListener="#{bindings.CustomerAccountVO1.collectionModel.makeCurrent}"
+                                          rowSelection="single" fetchSize="#{bindings.CustomerAccountVO1.rangeSize}"
+                                          id="resId1" partialTriggers="::b1 ::b2 ::b5">
+                                    <af:column sortProperty="#{bindings.CustomerAccountVO1.hints.AccountName.name}"
+                                               sortable="true"
+                                               headerText="#{bindings.CustomerAccountVO1.hints.AccountName.label}"
+                                               id="resId1c1">
+                                        <af:link shortDesc="#{bindings.CustomerAccountVO1.hints.AccountName.tooltip}"
+                                                 id="link1" text="#{row.AccountName}" action="edit"/>
+                                    </af:column>
+                                    <af:column sortProperty="#{bindings.CustomerAccountVO1.hints.AccountUrl.name}"
+                                               sortable="true"
+                                               headerText="#{bindings.CustomerAccountVO1.hints.AccountUrl.label}"
+                                               id="resId1c2">
+                                        <af:outputText value="#{row.AccountUrl}"
+                                                       shortDesc="#{bindings.CustomerAccountVO1.hints.AccountUrl.tooltip}"
+                                                       id="ot2"/>
+                                    </af:column>
+                                    <af:column sortProperty="#{bindings.CustomerAccountVO1.hints.ParentAccount.name}"
+                                               sortable="true"
+                                               headerText="#{bindings.CustomerAccountVO1.hints.ParentAccount.label}"
+                                               id="resId1c3">
+                                        <af:outputText value="#{row.ParentAccount}"
+                                                       shortDesc="#{bindings.CustomerAccountVO1.hints.ParentAccount.tooltip}"
+                                                       id="ot3">
+                                            <af:convertNumber groupingUsed="false"
+                                                              pattern="#{bindings.CustomerAccountVO1.hints.ParentAccount.format}"/>
+                                        </af:outputText>
+                                    </af:column>
+                                    <af:column sortProperty="#{bindings.CustomerAccountVO1.hints.Ceo.name}"
+                                               sortable="true"
+                                               headerText="#{bindings.CustomerAccountVO1.hints.Ceo.label}"
+                                               id="resId1c4">
+                                        <af:outputText value="#{row.Ceo}"
+                                                       shortDesc="#{bindings.CustomerAccountVO1.hints.Ceo.tooltip}"
+                                                       id="ot4"/>
+                                    </af:column>
+                                    <af:column sortProperty="#{bindings.CustomerAccountVO1.hints.NoOfEmployees.name}"
+                                               sortable="true"
+                                               headerText="#{bindings.CustomerAccountVO1.hints.NoOfEmployees.label}"
+                                               id="resId1c5">
+                                        <af:outputText value="#{row.NoOfEmployees}"
+                                                       shortDesc="#{bindings.CustomerAccountVO1.hints.NoOfEmployees.tooltip}"
+                                                       id="ot5">
+                                            <af:convertNumber groupingUsed="false"
+                                                              pattern="#{bindings.CustomerAccountVO1.hints.NoOfEmployees.format}"/>
+                                        </af:outputText>
+                                    </af:column>
+                                    <af:column sortProperty="#{bindings.CustomerAccountVO1.hints.Email.name}"
+                                               sortable="true"
+                                               headerText="#{bindings.CustomerAccountVO1.hints.Email.label}"
+                                               id="resId1c6">
+                                        <af:outputText value="#{row.Email}"
+                                                       shortDesc="#{bindings.CustomerAccountVO1.hints.Email.tooltip}"
+                                                       id="ot6"/>
+                                    </af:column>
+                                    <af:column sortProperty="#{bindings.CustomerAccountVO1.hints.PrimaryContact.name}"
+                                               sortable="true"
+                                               headerText="#{bindings.CustomerAccountVO1.hints.PrimaryContact.label}"
+                                               id="resId1c7">
+                                        <af:outputText value="#{row.PrimaryContact}"
+                                                       shortDesc="#{bindings.CustomerAccountVO1.hints.PrimaryContact.tooltip}"
+                                                       id="ot7"/>
+                                    </af:column>
+                                </af:table>
+                            </af:panelGroupLayout>
+                            <af:button actionListener="#{bindings.CreateInsert.execute}" text="Create New"
+                                       disabled="#{!bindings.CreateInsert.enabled}" id="b1" action="create"/>
+                            <af:button actionListener="#{bindings.setCurrentRowWithKey.execute}"
+                                       text="Edit" disabled="#{!bindings.setCurrentRowWithKey.enabled}"
+                                       id="b2" action="edit"/>
+                            <af:button actionListener="#{bindings.Commit.execute}" text="Save Changes"
+                                       disabled="#{!bindings.Commit.enabled}" id="b3"/>
+                            <af:button actionListener="#{bindings.Rollback.execute}" text="Discard Changes"
+                                       disabled="#{!bindings.Rollback.enabled}" immediate="true" id="b4">
+                                <af:resetActionListener/>
+                            </af:button>
+                            <af:button actionListener="#{bindings.Delete.execute}" text="Delete"
+                                       disabled="#{!bindings.Delete.enabled}" id="b5"/>
+                        </af:gridCell>
+                    </af:gridRow>
+                </af:panelGridLayout>
+            </af:form>
+        </af:document>
+    </f:view>
+</jsp:root>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.2.1.9.14" id="CreateAccountPageDef"
+                Package="view.pageDefs">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+    <iterator Binds="CustomerAccountVO1" RangeSize="25" DataControl="AppModuleDataControl"
+              id="CustomerAccountVO1Iterator"/>
+  </executables>
+  <bindings>
+    <attributeValues IterBinding="CustomerAccountVO1Iterator" id="AccountName">
+      <AttrNames>
+        <Item Value="AccountName"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="CustomerAccountVO1Iterator" id="AddressLine1">
+      <AttrNames>
+        <Item Value="AddressLine1"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="CustomerAccountVO1Iterator" id="AddressLine2">
+      <AttrNames>
+        <Item Value="AddressLine2"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="CustomerAccountVO1Iterator" id="AddressLine3">
+      <AttrNames>
+        <Item Value="AddressLine3"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="CustomerAccountVO1Iterator" id="AccountUrl">
+      <AttrNames>
+        <Item Value="AccountUrl"/>
+      </AttrNames>
+    </attributeValues>
+    <listOfValues IterBinding="CustomerAccountVO1Iterator" StaticList="false" Uses="LOV_ParentAccount"
+                  id="ParentAccount"/>
+    <attributeValues IterBinding="CustomerAccountVO1Iterator" id="Ceo">
+      <AttrNames>
+        <Item Value="Ceo"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="CustomerAccountVO1Iterator" id="NoOfEmployees">
+      <AttrNames>
+        <Item Value="NoOfEmployees"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="CustomerAccountVO1Iterator" id="Email">
+      <AttrNames>
+        <Item Value="Email"/>
+      </AttrNames>
+    </attributeValues>
+    <list IterBinding="CustomerAccountVO1Iterator" StaticList="false" Uses="LOV_PrimaryContact" id="PrimaryContact"
+          DTSupportsMRU="false" SelectItemValueMode="ListObject"/>
+    <action id="Commit" RequiresUpdateModel="true" Action="commitTransaction" DataControl="AppModuleDataControl"/>
+    <action id="Rollback" RequiresUpdateModel="false" Action="rollbackTransaction" DataControl="AppModuleDataControl"/>
+  </bindings>
+</pageDefinition>

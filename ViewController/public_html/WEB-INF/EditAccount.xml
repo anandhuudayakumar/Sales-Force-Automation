@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<adfc-config xmlns="http://xmlns.oracle.com/adf/controller" version="1.2">
+  <task-flow-definition id="EditAccount">
+    <default-activity>EditAccount2</default-activity>
+    <data-control-scope>
+      <shared/>
+    </data-control-scope>
+    <view id="EditAccount2">
+      <page>/EditAccount.jsff</page>
+    </view>
+    <task-flow-call id="AccountAppointment">
+      <task-flow-reference>
+        <document>/WEB-INF/AccountAppointment.xml</document>
+        <id>AccountAppointment</id>
+      </task-flow-reference>
+    </task-flow-call>
+    <task-flow-call id="AccountContacts">
+      <task-flow-reference>
+        <document>/WEB-INF/AccountContacts.xml</document>
+        <id>AccountContacts</id>
+      </task-flow-reference>
+    </task-flow-call>
+    <task-flow-call id="AccountOppurtunity">
+      <task-flow-reference>
+        <document>/WEB-INF/AccountOppurtunity.xml</document>
+        <id>AccountOppurtunity</id>
+      </task-flow-reference>
+    </task-flow-call>
+    <task-flow-call id="AccountTask">
+      <task-flow-reference>
+        <document>/WEB-INF/AccountTask.xml</document>
+        <id>AccountTask</id>
+      </task-flow-reference>
+    </task-flow-call>
+    <task-flow-return id="taskFlowReturn1">
+      <outcome>
+        <name>taskFlowReturn1</name>
+      </outcome>
+    </task-flow-return>
+    <control-flow-rule id="__1">
+      <from-activity-id>EditAccount2</from-activity-id>
+      <control-flow-case id="__2">
+        <from-outcome>appointment</from-outcome>
+        <to-activity-id>AccountAppointment</to-activity-id>
+      </control-flow-case>
+      <control-flow-case id="__3">
+        <from-outcome>contact</from-outcome>
+        <to-activity-id>AccountContacts</to-activity-id>
+      </control-flow-case>
+      <control-flow-case id="__4">
+        <from-outcome>oppurtunity</from-outcome>
+        <to-activity-id>AccountOppurtunity</to-activity-id>
+      </control-flow-case>
+      <control-flow-case id="__5">
+        <from-outcome>task</from-outcome>
+        <to-activity-id>AccountTask</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <control-flow-rule id="__6">
+      <from-activity-id>*</from-activity-id>
+      <control-flow-case id="__7">
+        <from-outcome>back</from-outcome>
+        <to-activity-id>taskFlowReturn1</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <use-page-fragments/>
+  </task-flow-definition>
+</adfc-config>

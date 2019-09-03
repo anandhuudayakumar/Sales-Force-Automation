@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.2.1.9.14" id="CreateOppurtunitiesPageDef"
+                Package="view.pageDefs">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+    <iterator Binds="OpportunitiesVO1" RangeSize="25" DataControl="AppModuleDataControl" id="OpportunitiesVO1Iterator"/>
+  </executables>
+  <bindings>
+    <attributeValues IterBinding="OpportunitiesVO1Iterator" id="WinProb">
+      <AttrNames>
+        <Item Value="WinProb"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="OpportunitiesVO1Iterator" id="CloseDate">
+      <AttrNames>
+        <Item Value="CloseDate"/>
+      </AttrNames>
+    </attributeValues>
+    <list IterBinding="OpportunitiesVO1Iterator" StaticList="false" Uses="LOV_PrimaryContact" id="PrimaryContact"
+          DTSupportsMRU="false" SelectItemValueMode="ListObject"/>
+    <attributeValues IterBinding="OpportunitiesVO1Iterator" id="SalesStage">
+      <AttrNames>
+        <Item Value="SalesStage"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="OpportunitiesVO1Iterator" id="SalesMeathod">
+      <AttrNames>
+        <Item Value="SalesMeathod"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="OpportunitiesVO1Iterator" id="SalesChannel">
+      <AttrNames>
+        <Item Value="SalesChannel"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="OpportunitiesVO1Iterator" id="Budgeted">
+      <AttrNames>
+        <Item Value="Budgeted"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="OpportunitiesVO1Iterator" id="BudgetAmount">
+      <AttrNames>
+        <Item Value="BudgetAmount"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="OpportunitiesVO1Iterator" id="EstimatedDuration">
+      <AttrNames>
+        <Item Value="EstimatedDuration"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="OpportunitiesVO1Iterator" id="RiskLevel">
+      <AttrNames>
+        <Item Value="RiskLevel"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="OpportunitiesVO1Iterator" id="DecisionLevel">
+      <AttrNames>
+        <Item Value="DecisionLevel"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="OpportunitiesVO1Iterator" id="OppDocument">
+      <AttrNames>
+        <Item Value="OppDocument"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="OpportunitiesVO1Iterator" id="ObjectVersion">
+      <AttrNames>
+        <Item Value="ObjectVersion"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="OpportunitiesVO1Iterator" id="OppName">
+      <AttrNames>
+        <Item Value="OppName"/>
+      </AttrNames>
+    </attributeValues>
+    <list IterBinding="OpportunitiesVO1Iterator" StaticList="false" Uses="LOV_Accountid" id="Accountid"
+          DTSupportsMRU="false" SelectItemValueMode="ListObject"/>
+    <action id="Commit" RequiresUpdateModel="true" Action="commitTransaction" DataControl="AppModuleDataControl"/>
+    <action id="Rollback" RequiresUpdateModel="false" Action="rollbackTransaction" DataControl="AppModuleDataControl"/>
+  </bindings>
+</pageDefinition>

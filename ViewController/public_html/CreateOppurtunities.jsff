@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ui:composition xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:af="http://xmlns.oracle.com/adf/faces/rich"
+                xmlns:f="http://java.sun.com/jsf/core">
+  <af:panelFormLayout id="pfl1">
+    <af:inputText value="#{bindings.WinProb.inputValue}" label="#{bindings.WinProb.hints.label}"
+                  required="#{bindings.WinProb.hints.mandatory}" columns="#{bindings.WinProb.hints.displayWidth}"
+                  maximumLength="#{bindings.WinProb.hints.precision}" shortDesc="#{bindings.WinProb.hints.tooltip}"
+                  id="it1">
+      <f:validator binding="#{bindings.WinProb.validator}"/>
+      <af:convertNumber groupingUsed="false" pattern="#{bindings.WinProb.format}"/>
+    </af:inputText>
+    <af:inputDate value="#{bindings.CloseDate.inputValue}" label="#{bindings.CloseDate.hints.label}"
+                  required="#{bindings.CloseDate.hints.mandatory}" columns="#{bindings.CloseDate.hints.displayWidth}"
+                  shortDesc="#{bindings.CloseDate.hints.tooltip}" id="id1">
+      <f:validator binding="#{bindings.CloseDate.validator}"/>
+      <af:convertDateTime pattern="#{bindings.CloseDate.format}"/>
+    </af:inputDate>
+    <af:selectOneChoice value="#{bindings.PrimaryContact.inputValue}" label="#{bindings.PrimaryContact.label}"
+                        required="#{bindings.PrimaryContact.hints.mandatory}"
+                        shortDesc="#{bindings.PrimaryContact.hints.tooltip}" id="soc1">
+      <f:selectItems value="#{bindings.PrimaryContact.items}" id="si1"/>
+      <f:validator binding="#{bindings.PrimaryContact.validator}"/>
+    </af:selectOneChoice>
+    <af:inputText value="#{bindings.SalesStage.inputValue}" label="#{bindings.SalesStage.hints.label}"
+                  required="#{bindings.SalesStage.hints.mandatory}" columns="#{bindings.SalesStage.hints.displayWidth}"
+                  maximumLength="#{bindings.SalesStage.hints.precision}"
+                  shortDesc="#{bindings.SalesStage.hints.tooltip}" id="it2">
+      <f:validator binding="#{bindings.SalesStage.validator}"/>
+    </af:inputText>
+    <af:inputText value="#{bindings.SalesMeathod.inputValue}" label="#{bindings.SalesMeathod.hints.label}"
+                  required="#{bindings.SalesMeathod.hints.mandatory}"
+                  columns="#{bindings.SalesMeathod.hints.displayWidth}"
+                  maximumLength="#{bindings.SalesMeathod.hints.precision}"
+                  shortDesc="#{bindings.SalesMeathod.hints.tooltip}" id="it3">
+      <f:validator binding="#{bindings.SalesMeathod.validator}"/>
+    </af:inputText>
+    <af:inputText value="#{bindings.SalesChannel.inputValue}" label="#{bindings.SalesChannel.hints.label}"
+                  required="#{bindings.SalesChannel.hints.mandatory}"
+                  columns="#{bindings.SalesChannel.hints.displayWidth}"
+                  maximumLength="#{bindings.SalesChannel.hints.precision}"
+                  shortDesc="#{bindings.SalesChannel.hints.tooltip}" id="it4">
+      <f:validator binding="#{bindings.SalesChannel.validator}"/>
+    </af:inputText>
+    <af:inputText value="#{bindings.Budgeted.inputValue}" label="#{bindings.Budgeted.hints.label}"
+                  required="#{bindings.Budgeted.hints.mandatory}" columns="#{bindings.Budgeted.hints.displayWidth}"
+                  maximumLength="#{bindings.Budgeted.hints.precision}" shortDesc="#{bindings.Budgeted.hints.tooltip}"
+                  id="it5">
+      <f:validator binding="#{bindings.Budgeted.validator}"/>
+    </af:inputText>
+    <af:inputText value="#{bindings.BudgetAmount.inputValue}" label="#{bindings.BudgetAmount.hints.label}"
+                  required="#{bindings.BudgetAmount.hints.mandatory}"
+                  columns="#{bindings.BudgetAmount.hints.displayWidth}"
+                  maximumLength="#{bindings.BudgetAmount.hints.precision}"
+                  shortDesc="#{bindings.BudgetAmount.hints.tooltip}" id="it6">
+      <f:validator binding="#{bindings.BudgetAmount.validator}"/>
+      <af:convertNumber groupingUsed="false" pattern="#{bindings.BudgetAmount.format}"/>
+    </af:inputText>
+    <af:inputText value="#{bindings.EstimatedDuration.inputValue}" label="#{bindings.EstimatedDuration.hints.label}"
+                  required="#{bindings.EstimatedDuration.hints.mandatory}"
+                  columns="#{bindings.EstimatedDuration.hints.displayWidth}"
+                  maximumLength="#{bindings.EstimatedDuration.hints.precision}"
+                  shortDesc="#{bindings.EstimatedDuration.hints.tooltip}" id="it7">
+      <f:validator binding="#{bindings.EstimatedDuration.validator}"/>
+    </af:inputText>
+    <af:inputText value="#{bindings.RiskLevel.inputValue}" label="#{bindings.RiskLevel.hints.label}"
+                  required="#{bindings.RiskLevel.hints.mandatory}" columns="#{bindings.RiskLevel.hints.displayWidth}"
+                  maximumLength="#{bindings.RiskLevel.hints.precision}" shortDesc="#{bindings.RiskLevel.hints.tooltip}"
+                  id="it8">
+      <f:validator binding="#{bindings.RiskLevel.validator}"/>
+    </af:inputText>
+    <af:inputText value="#{bindings.DecisionLevel.inputValue}" label="#{bindings.DecisionLevel.hints.label}"
+                  required="#{bindings.DecisionLevel.hints.mandatory}"
+                  columns="#{bindings.DecisionLevel.hints.displayWidth}"
+                  maximumLength="#{bindings.DecisionLevel.hints.precision}"
+                  shortDesc="#{bindings.DecisionLevel.hints.tooltip}" id="it9">
+      <f:validator binding="#{bindings.DecisionLevel.validator}"/>
+    </af:inputText>
+    <af:inputText value="#{bindings.OppDocument.inputValue}" label="#{bindings.OppDocument.hints.label}"
+                  required="#{bindings.OppDocument.hints.mandatory}"
+                  columns="#{bindings.OppDocument.hints.displayWidth}"
+                  maximumLength="#{bindings.OppDocument.hints.precision}"
+                  shortDesc="#{bindings.OppDocument.hints.tooltip}" id="it10">
+      <f:validator binding="#{bindings.OppDocument.validator}"/>
+    </af:inputText>
+    <af:inputText value="#{bindings.ObjectVersion.inputValue}" label="#{bindings.ObjectVersion.hints.label}"
+                  required="#{bindings.ObjectVersion.hints.mandatory}"
+                  columns="#{bindings.ObjectVersion.hints.displayWidth}"
+                  maximumLength="#{bindings.ObjectVersion.hints.precision}"
+                  shortDesc="#{bindings.ObjectVersion.hints.tooltip}" id="it11">
+      <f:validator binding="#{bindings.ObjectVersion.validator}"/>
+    </af:inputText>
+    <af:inputText value="#{bindings.OppName.inputValue}" label="#{bindings.OppName.hints.label}"
+                  required="#{bindings.OppName.hints.mandatory}" columns="#{bindings.OppName.hints.displayWidth}"
+                  maximumLength="#{bindings.OppName.hints.precision}" shortDesc="#{bindings.OppName.hints.tooltip}"
+                  id="it12">
+      <f:validator binding="#{bindings.OppName.validator}"/>
+    </af:inputText>
+    <af:selectOneChoice value="#{bindings.Accountid.inputValue}" label="#{bindings.Accountid.label}"
+                        required="#{bindings.Accountid.hints.mandatory}" shortDesc="#{bindings.Accountid.hints.tooltip}"
+                        id="soc2">
+      <f:selectItems value="#{bindings.Accountid.items}" id="si2"/>
+      <f:validator binding="#{bindings.Accountid.validator}"/>
+    </af:selectOneChoice>
+  </af:panelFormLayout>
+  <af:button actionListener="#{bindings.Commit.execute}" text="Save" disabled="#{!bindings.Commit.enabled}" id="b1"
+             action="back"/>
+  <af:button actionListener="#{bindings.Rollback.execute}" text="Reset" disabled="#{!bindings.Rollback.enabled}"
+             immediate="true" id="b2" action="back">
+    <af:resetActionListener/>
+  </af:button>
+</ui:composition>

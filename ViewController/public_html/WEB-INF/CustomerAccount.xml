@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<adfc-config xmlns="http://xmlns.oracle.com/adf/controller" version="1.2">
+  <task-flow-definition id="CustomerAccount">
+    <default-activity>Searchaccount</default-activity>
+    <data-control-scope>
+      <shared/>
+    </data-control-scope>
+    <view id="Searchaccount">
+      <page>/Searchaccount.jsff</page>
+    </view>
+    <view id="CreateAccount">
+      <page>/CreateAccount.jsff</page>
+    </view>
+    <task-flow-call id="EditAccount">
+      <task-flow-reference>
+        <document>/WEB-INF/EditAccount.xml</document>
+        <id>EditAccount</id>
+      </task-flow-reference>
+    </task-flow-call>
+    <control-flow-rule id="__1">
+      <from-activity-id>Searchaccount</from-activity-id>
+      <control-flow-case id="__2">
+        <from-outcome>createaccount</from-outcome>
+        <to-activity-id>CreateAccount</to-activity-id>
+      </control-flow-case>
+      <control-flow-case id="__5">
+        <from-outcome>edit</from-outcome>
+        <to-activity-id>EditAccount</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <control-flow-rule id="__3">
+      <from-activity-id>CreateAccount</from-activity-id>
+      <control-flow-case id="__4">
+        <from-outcome>back</from-outcome>
+        <to-activity-id>Searchaccount</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <use-page-fragments/>
+  </task-flow-definition>
+</adfc-config>

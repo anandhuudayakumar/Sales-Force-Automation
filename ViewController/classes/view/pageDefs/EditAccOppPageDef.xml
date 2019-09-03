@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.2.1.9.14" id="EditAccOppPageDef"
+                Package="view.pageDefs">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+    <iterator Binds="OpportunitiesVO6" RangeSize="25" DataControl="AppModuleDataControl" id="OpportunitiesVO6Iterator"/>
+  </executables>
+  <bindings>
+    <attributeValues IterBinding="OpportunitiesVO6Iterator" id="WinProb">
+      <AttrNames>
+        <Item Value="WinProb"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="OpportunitiesVO6Iterator" id="CloseDate">
+      <AttrNames>
+        <Item Value="CloseDate"/>
+      </AttrNames>
+    </attributeValues>
+    <list IterBinding="OpportunitiesVO6Iterator" StaticList="false" Uses="LOV_PrimaryContact" id="PrimaryContact"
+          DTSupportsMRU="false" SelectItemValueMode="ListObject"/>
+    <attributeValues IterBinding="OpportunitiesVO6Iterator" id="SalesStage">
+      <AttrNames>
+        <Item Value="SalesStage"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="OpportunitiesVO6Iterator" id="SalesMeathod">
+      <AttrNames>
+        <Item Value="SalesMeathod"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="OpportunitiesVO6Iterator" id="SalesChannel">
+      <AttrNames>
+        <Item Value="SalesChannel"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="OpportunitiesVO6Iterator" id="Budgeted">
+      <AttrNames>
+        <Item Value="Budgeted"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="OpportunitiesVO6Iterator" id="BudgetAmount">
+      <AttrNames>
+        <Item Value="BudgetAmount"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="OpportunitiesVO6Iterator" id="EstimatedDuration">
+      <AttrNames>
+        <Item Value="EstimatedDuration"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="OpportunitiesVO6Iterator" id="RiskLevel">
+      <AttrNames>
+        <Item Value="RiskLevel"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="OpportunitiesVO6Iterator" id="DecisionLevel">
+      <AttrNames>
+        <Item Value="DecisionLevel"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="OpportunitiesVO6Iterator" id="OppDocument">
+      <AttrNames>
+        <Item Value="OppDocument"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="OpportunitiesVO6Iterator" id="ObjectVersion">
+      <AttrNames>
+        <Item Value="ObjectVersion"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="OpportunitiesVO6Iterator" id="OppName">
+      <AttrNames>
+        <Item Value="OppName"/>
+      </AttrNames>
+    </attributeValues>
+    <action id="Commit" RequiresUpdateModel="true" Action="commitTransaction" DataControl="AppModuleDataControl"/>
+    <action id="Rollback" RequiresUpdateModel="false" Action="rollbackTransaction" DataControl="AppModuleDataControl"/>
+  </bindings>
+</pageDefinition>

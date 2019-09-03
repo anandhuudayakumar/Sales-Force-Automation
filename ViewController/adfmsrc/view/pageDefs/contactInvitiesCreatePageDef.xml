@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.2.1.9.14" id="contactInvitiesCreatePageDef"
+                Package="view.pageDefs">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+    <iterator Binds="ContactInviteesVO1" RangeSize="25" DataControl="AppModuleDataControl"
+              id="ContactInviteesVO1Iterator"/>
+  </executables>
+  <bindings>
+    <list IterBinding="ContactInviteesVO1Iterator" StaticList="false" Uses="LOV_AppointmentId" id="AppointmentId"
+          DTSupportsMRU="false" SelectItemValueMode="ListObject"/>
+    <list IterBinding="ContactInviteesVO1Iterator" StaticList="false" Uses="LOV_ContactId" id="ContactId"
+          DTSupportsMRU="false" SelectItemValueMode="ListObject"/>
+  </bindings>
+</pageDefinition>

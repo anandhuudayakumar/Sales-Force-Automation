@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<adfc-config xmlns="http://xmlns.oracle.com/adf/controller" version="1.2">
+  <task-flow-definition id="adminTaskFlows">
+    <default-activity>adminHome</default-activity>
+    <data-control-scope>
+      <shared/>
+    </data-control-scope>
+    <view id="adminHome">
+      <page>/adminHome.jsff</page>
+    </view>
+    <view id="Roles">
+      <page>/Roles.jsff</page>
+    </view>
+    <view id="Product">
+      <page>/Product.jsff</page>
+    </view>
+    <view id="UserAccount">
+      <page>/UserAccount.jsff</page>
+    </view>
+    <view id="userAccountEdit">
+      <page>/userAccountEdit.jsff</page>
+    </view>
+    <control-flow-rule id="__5">
+      <from-activity-id>*</from-activity-id>
+      <control-flow-case id="__8">
+        <from-outcome>roles</from-outcome>
+        <to-activity-id>Roles</to-activity-id>
+      </control-flow-case>
+      <control-flow-case id="__9">
+        <from-outcome>product</from-outcome>
+        <to-activity-id>Product</to-activity-id>
+      </control-flow-case>
+      <control-flow-case id="__10">
+        <from-outcome>userAccount</from-outcome>
+        <to-activity-id>UserAccount</to-activity-id>
+      </control-flow-case>
+      <control-flow-case id="__11">
+        <from-outcome>home</from-outcome>
+        <to-activity-id>adminHome</to-activity-id>
+      </control-flow-case>
+      <control-flow-case id="__12">
+        <from-outcome>userEdit</from-outcome>
+        <to-activity-id>userAccountEdit</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <use-page-fragments/>
+  </task-flow-definition>
+</adfc-config>

@@ -1,0 +1,45 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SDM>
+   <OverallProperties
+      id="OverallProperties1"/>
+   <View
+      id="View13">
+      <property
+         name="activityId">LoginPage</property>
+      <property
+         name="x">76.0</property>
+      <property
+         name="description">&lt;html>&lt;p>&lt;b>LoginPage&lt;/b>&lt;/p>&lt;p>Activity Type:  View&lt;/p></property>
+      <property
+         name="y">506.8672</property>
+      <property
+         name="exceptionHandler">false</property>
+   </View>
+   <TaskFlowCall
+      id="TaskFlowCall14">
+      <property
+         name="description">&lt;html>&lt;p>&lt;b>Home&lt;/b>&lt;/p>&lt;p>Activity Type:  Task Flow Call&lt;/p></property>
+      <property
+         name="activityId">Home</property>
+      <property
+         name="x">376.5</property>
+      <property
+         name="y">511.30078</property>
+      <property
+         name="documentReference">/WEB-INF/Home.xml</property>
+      <property
+         name="exceptionHandler">false</property>
+      <property
+         name="taskFlowId">Home</property>
+   </TaskFlowCall>
+   <ControlFlowCase
+      islink="true"
+      id="ControlFlowCase15"
+      from="View13"
+      to="TaskFlowCall14">
+      <property
+         name="fromOutcome">login</property>
+      <property
+         name="sdm:polyPoints">R50,117.0,506.80078,335.5,511.23438,L50</property>
+   </ControlFlowCase>
+</SDM>

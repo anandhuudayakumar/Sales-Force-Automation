@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.2.1.9.14" id="searchtaskaccPageDef"
+                Package="view.pageDefs">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+    <iterator Binds="TasksVO2" RangeSize="25" DataControl="AppModuleDataControl" id="TasksVO2Iterator"/>
+    <searchRegion Criteria="Tasks" Customizer="oracle.jbo.uicli.binding.JUSearchBindingCustomizer"
+                  Binds="TasksVO2Iterator" id="TasksQuery"/>
+  </executables>
+  <bindings>
+    <tree IterBinding="TasksVO2Iterator" id="TasksVO2">
+      <nodeDefinition DefName="model.view.TasksVO" Name="TasksVO20">
+        <AttrNames>
+          <Item Value="TaskName"/>
+          <Item Value="DueDate"/>
+          <Item Value="Priority"/>
+          <Item Value="PercentageCompletion"/>
+        </AttrNames>
+      </nodeDefinition>
+    </tree>
+    <action IterBinding="TasksVO2Iterator" id="CreateInsert" RequiresUpdateModel="true" Action="createInsertRow"/>
+  </bindings>
+</pageDefinition>

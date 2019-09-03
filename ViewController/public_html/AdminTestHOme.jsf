@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html>
+<f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+    <af:document title="AdminTestHOme.jsf" id="d1">
+        <af:messages id="m1"/>
+        <af:form id="f1">
+            <af:pageTemplate viewId="/oracle/ui/pattern/dynamicShell/dynamicTabShell.jspx" id="pt1">
+                <f:facet name="copyright"/>
+                <f:facet name="about"/>
+                <f:facet name="navigation"/>
+                <f:facet name="globalLinks"/>
+                <f:facet name="status"/>
+                <f:facet name="globalToolbar">
+                    <af:panelSpringboard id="ps1" inlineStyle="color:Black;">
+                        <af:showDetailItem text="home" id="sdi1">
+                            <af:region value="#{bindings.AdminHomeTaskFlow1.regionModel}" id="r1"/>
+                        </af:showDetailItem>
+                    </af:panelSpringboard>
+                </f:facet>
+                <f:facet name="globalSearch"/>
+                <f:facet name="globalTabs"/>
+                <f:facet name="welcome">
+                    <af:region value="#{bindings.AdminHomeTaskFlow2.regionModel}" id="r2"/>
+                </f:facet>
+                <f:facet name="innerToolbar"/>
+            </af:pageTemplate>
+        </af:form>
+    </af:document>
+</f:view>

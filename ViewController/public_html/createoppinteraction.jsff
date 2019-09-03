@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ui:composition xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:af="http://xmlns.oracle.com/adf/faces/rich"
+                xmlns:f="http://java.sun.com/jsf/core">
+  <af:panelFormLayout id="pfl1">
+    <af:inputText value="#{bindings.InteractionName.inputValue}" label="#{bindings.InteractionName.hints.label}"
+                  required="#{bindings.InteractionName.hints.mandatory}"
+                  columns="#{bindings.InteractionName.hints.displayWidth}"
+                  maximumLength="#{bindings.InteractionName.hints.precision}"
+                  shortDesc="#{bindings.InteractionName.hints.tooltip}" id="it1">
+      <f:validator binding="#{bindings.InteractionName.validator}"/>
+    </af:inputText>
+    <af:inputText value="#{bindings.InteractionType.inputValue}" label="#{bindings.InteractionType.hints.label}"
+                  required="#{bindings.InteractionType.hints.mandatory}"
+                  columns="#{bindings.InteractionType.hints.displayWidth}"
+                  maximumLength="#{bindings.InteractionType.hints.precision}"
+                  shortDesc="#{bindings.InteractionType.hints.tooltip}" id="it2">
+      <f:validator binding="#{bindings.InteractionType.validator}"/>
+    </af:inputText>
+    <af:inputText value="#{bindings.Direction.inputValue}" label="#{bindings.Direction.hints.label}"
+                  required="#{bindings.Direction.hints.mandatory}" columns="#{bindings.Direction.hints.displayWidth}"
+                  maximumLength="#{bindings.Direction.hints.precision}" shortDesc="#{bindings.Direction.hints.tooltip}"
+                  id="it3">
+      <f:validator binding="#{bindings.Direction.validator}"/>
+    </af:inputText>
+    <af:inputDate value="#{bindings.StartDatetime.inputValue}" label="#{bindings.StartDatetime.hints.label}"
+                  required="#{bindings.StartDatetime.hints.mandatory}"
+                  columns="#{bindings.StartDatetime.hints.displayWidth}"
+                  shortDesc="#{bindings.StartDatetime.hints.tooltip}" id="id1">
+      <f:validator binding="#{bindings.StartDatetime.validator}"/>
+      <af:convertDateTime pattern="#{bindings.StartDatetime.format}"/>
+    </af:inputDate>
+    <af:inputDate value="#{bindings.Enddatetime.inputValue}" label="#{bindings.Enddatetime.hints.label}"
+                  required="#{bindings.Enddatetime.hints.mandatory}"
+                  columns="#{bindings.Enddatetime.hints.displayWidth}" shortDesc="#{bindings.Enddatetime.hints.tooltip}"
+                  id="id2">
+      <f:validator binding="#{bindings.Enddatetime.validator}"/>
+      <af:convertDateTime pattern="#{bindings.Enddatetime.format}"/>
+    </af:inputDate>
+    <af:inputText value="#{bindings.Description.inputValue}" label="#{bindings.Description.hints.label}"
+                  required="#{bindings.Description.hints.mandatory}"
+                  columns="#{bindings.Description.hints.displayWidth}"
+                  maximumLength="#{bindings.Description.hints.precision}"
+                  shortDesc="#{bindings.Description.hints.tooltip}" id="it4">
+      <f:validator binding="#{bindings.Description.validator}"/>
+    </af:inputText>
+    <af:inputText value="#{bindings.Resolution.inputValue}" label="#{bindings.Resolution.hints.label}"
+                  required="#{bindings.Resolution.hints.mandatory}" columns="#{bindings.Resolution.hints.displayWidth}"
+                  maximumLength="#{bindings.Resolution.hints.precision}"
+                  shortDesc="#{bindings.Resolution.hints.tooltip}" id="it5">
+      <f:validator binding="#{bindings.Resolution.validator}"/>
+    </af:inputText>
+    <af:inputText value="#{bindings.OppurtunityId.inputValue}" label="#{bindings.OppurtunityId.hints.label}"
+                  required="#{bindings.OppurtunityId.hints.mandatory}"
+                  columns="#{bindings.OppurtunityId.hints.displayWidth}"
+                  maximumLength="#{bindings.OppurtunityId.hints.precision}"
+                  shortDesc="#{bindings.OppurtunityId.hints.tooltip}" id="it6">
+      <f:validator binding="#{bindings.OppurtunityId.validator}"/>
+      <af:convertNumber groupingUsed="false" pattern="#{bindings.OppurtunityId.format}"/>
+    </af:inputText>
+    <af:inputText value="#{bindings.Contactid.inputValue}" label="#{bindings.Contactid.hints.label}"
+                  required="#{bindings.Contactid.hints.mandatory}" columns="#{bindings.Contactid.hints.displayWidth}"
+                  maximumLength="#{bindings.Contactid.hints.precision}" shortDesc="#{bindings.Contactid.hints.tooltip}"
+                  id="it7">
+      <f:validator binding="#{bindings.Contactid.validator}"/>
+      <af:convertNumber groupingUsed="false" pattern="#{bindings.Contactid.format}"/>
+    </af:inputText>
+  </af:panelFormLayout>
+  <af:button actionListener="#{bindings.Commit.execute}" text="Save" disabled="#{!bindings.Commit.enabled}" id="b1"
+  
+             action="back"/>
+  <af:button actionListener="#{bindings.Rollback.execute}" text="Reset" disabled="#{!bindings.Rollback.enabled}"
+             immediate="true" id="b2" action="back">
+    <af:resetActionListener/>
+  </af:button>
+</ui:composition>

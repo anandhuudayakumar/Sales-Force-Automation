@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE ViewLink SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewLink
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="OppnoteopportunitiesFkLink"
+  Version="12.2.1.9.14"
+  InheritPersonalization="merge"
+  EntityAssociation="model.entities.OppnoteopportunitiesFkAssoc">
+  <ViewLinkDefEnd
+    Name="OpportunitiesVO"
+    Cardinality="1"
+    Source="true"
+    Owner="model.view.OpportunitiesVO">
+    <DesignTime>
+      <Attr Name="_isUpdateable" Value="true"/>
+      <Attr Name="_minCardinality" Value="1"/>
+      <Attr Name="_finderName" Value="OpportunitiesVO"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.view.OpportunitiesVO.OppId"/>
+    </AttrArray>
+  </ViewLinkDefEnd>
+  <ViewLinkDefEnd
+    Name="OppurtunityNoteVO"
+    Cardinality="-1"
+    Owner="model.view.OppurtunityNoteVO">
+    <DesignTime>
+      <Attr Name="_isUpdateable" Value="true"/>
+      <Attr Name="_finderName" Value="OppurtunityNoteVO"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.view.OppurtunityNoteVO.OppurtunityId"/>
+    </AttrArray>
+  </ViewLinkDefEnd>
+</ViewLink>

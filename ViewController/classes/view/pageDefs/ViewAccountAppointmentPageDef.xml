@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.2.1.9.14" id="ViewAccountAppointmentPageDef"
+                Package="view.pageDefs">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+    <iterator Binds="AppointmentVO3" RangeSize="25" DataControl="AppModuleDataControl" id="AppointmentVO3Iterator"/>
+  </executables>
+  <bindings>
+    <attributeValues IterBinding="AppointmentVO3Iterator" id="AppName">
+      <AttrNames>
+        <Item Value="AppName"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="AppointmentVO3Iterator" id="AppDescription">
+      <AttrNames>
+        <Item Value="AppDescription"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="AppointmentVO3Iterator" id="StartDate">
+      <AttrNames>
+        <Item Value="StartDate"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="AppointmentVO3Iterator" id="EndDate">
+      <AttrNames>
+        <Item Value="EndDate"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="AppointmentVO3Iterator" id="Location">
+      <AttrNames>
+        <Item Value="Location"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="AppointmentVO3Iterator" id="AccountId">
+      <AttrNames>
+        <Item Value="AccountId"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="AppointmentVO3Iterator" id="OppurtunityId">
+      <AttrNames>
+        <Item Value="OppurtunityId"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="AppointmentVO3Iterator" id="ContactId">
+      <AttrNames>
+        <Item Value="ContactId"/>
+      </AttrNames>
+    </attributeValues>
+    <action id="Commit" RequiresUpdateModel="true" Action="commitTransaction" DataControl="AppModuleDataControl"/>
+    <action id="Rollback" RequiresUpdateModel="false" Action="rollbackTransaction" DataControl="AppModuleDataControl"/>
+  </bindings>
+</pageDefinition>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<adfc-config xmlns="http://xmlns.oracle.com/adf/controller" version="1.2">
+  <task-flow-definition id="AccountOppurtunity">
+    <default-activity>ViewAccOpp</default-activity>
+    <data-control-scope>
+      <shared/>
+    </data-control-scope>
+    <view id="ViewAccOpp">
+      <page>/ViewAccOpp.jsff</page>
+    </view>
+    <view id="EditAccOpp">
+      <page>/EditAccOpp.jsff</page>
+    </view>
+    <view id="CreateAccOpp">
+      <page>/CreateAccOpp.jsff</page>
+    </view>
+    <task-flow-return id="Return">
+      <outcome>
+        <name>Return</name>
+      </outcome>
+    </task-flow-return>
+    <control-flow-rule id="__1">
+      <from-activity-id>ViewAccOpp</from-activity-id>
+      <control-flow-case id="__2">
+        <from-outcome>editopp</from-outcome>
+        <to-activity-id>EditAccOpp</to-activity-id>
+      </control-flow-case>
+      <control-flow-case id="__3">
+        <from-outcome>createopp</from-outcome>
+        <to-activity-id>CreateAccOpp</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <control-flow-rule id="__4">
+      <from-activity-id>*</from-activity-id>
+      <control-flow-case id="__5">
+        <from-outcome>backtoaccount</from-outcome>
+        <to-activity-id>Return</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <control-flow-rule id="__6">
+      <from-activity-id>EditAccOpp</from-activity-id>
+      <control-flow-case id="__7">
+        <from-outcome>back</from-outcome>
+        <to-activity-id>ViewAccOpp</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <control-flow-rule id="__8">
+      <from-activity-id>CreateAccOpp</from-activity-id>
+      <control-flow-case id="__9">
+        <from-outcome>back</from-outcome>
+        <to-activity-id>ViewAccOpp</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <use-page-fragments/>
+  </task-flow-definition>
+</adfc-config>

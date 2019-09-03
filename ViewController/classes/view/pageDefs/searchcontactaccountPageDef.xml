@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.2.1.9.14" id="searchcontactaccountPageDef"
+                Package="view.pageDefs">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+    <iterator Binds="ContactsVO2" RangeSize="25" DataControl="AppModuleDataControl" id="ContactsVO2Iterator"/>
+    <searchRegion Criteria="Contacts" Customizer="oracle.jbo.uicli.binding.JUSearchBindingCustomizer"
+                  Binds="ContactsVO2Iterator" id="ContactsQuery"/>
+  </executables>
+  <bindings>
+    <tree IterBinding="ContactsVO2Iterator" id="ContactsVO2">
+      <nodeDefinition DefName="model.view.ContactsVO" Name="ContactsVO20">
+        <AttrNames>
+          <Item Value="ContactName"/>
+          <Item Value="Title"/>
+          <Item Value="Department"/>
+          <Item Value="WorkPhone"/>
+          <Item Value="Email"/>
+          <Item Value="InfluenceLevel"/>
+        </AttrNames>
+      </nodeDefinition>
+    </tree>
+    <action IterBinding="ContactsVO2Iterator" id="CreateInsert" RequiresUpdateModel="true" Action="createInsertRow"/>
+  </bindings>
+</pageDefinition>

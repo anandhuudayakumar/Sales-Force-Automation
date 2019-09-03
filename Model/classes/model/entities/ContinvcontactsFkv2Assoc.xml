@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE Association SYSTEM "jbo_03_01.dtd">
+<!---->
+<Association
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="ContinvcontactsFkv2Assoc"
+  Version="12.2.1.9.14"
+  InheritPersonalization="merge">
+  <DesignTime>
+    <Attr Name="_isCodegen" Value="true"/>
+  </DesignTime>
+  <AssociationEnd
+    Name="ContactsEO"
+    Cardinality="1"
+    Source="true"
+    Owner="model.entities.ContactsEO">
+    <DesignTime>
+      <Attr Name="_isUpdateable" Value="true"/>
+      <Attr Name="_minCardinality" Value="1"/>
+      <Attr Name="_aggregation" Value="0"/>
+      <Attr Name="_finderName" Value="ContactsEO"/>
+      <Attr Name="_foreignKey" Value="model.entities.ContactsEO.ContactsPk"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.entities.ContactsEO.ContactId"/>
+    </AttrArray>
+  </AssociationEnd>
+  <AssociationEnd
+    Name="ContactInteractionEO"
+    Cardinality="-1"
+    Owner="model.entities.ContactInteractionEO">
+    <DesignTime>
+      <Attr Name="_isUpdateable" Value="true"/>
+      <Attr Name="_aggregation" Value="0"/>
+      <Attr Name="_finderName" Value="ContactInteractionEO"/>
+      <Attr Name="_foreignKey" Value="model.entities.ContactInteractionEO.ContinvcontactsFkv2"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.entities.ContactInteractionEO.ContactId"/>
+    </AttrArray>
+  </AssociationEnd>
+</Association>
